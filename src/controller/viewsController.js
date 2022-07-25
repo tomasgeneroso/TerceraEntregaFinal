@@ -75,14 +75,35 @@ const deleteCart= ()=>{
 
 const getAllProducts=async(req,res)=>{
     try {
-        if(req.session.cart){
+        /*if(req.session.cart){
            let cart= req.session.cart
            res.render('../views/pages/carro.ejs',{cart,deleteCart})
         }else{
             req.session.cart=[]
             let cart =req.session.cart
             res.render('../views/pages/carro.ejs',{cart,deleteCart})
+        }*/
+        let cart = req.session.cart,
+            displayCart = {items: [], total: 0},
+            total = 0;
+        
+        
+
+        //Ready the products for display
+        for (let item in cart) {
+            displayCart.items.push(cart[item]);
+            total += (cart[item].qty * cart[item].price);
         }
+        req.session.total = displayCart.total = total.toFixed(2);
+
+        let model ={
+            cart: displayCart
+        };
+        if (!cart) {
+            res.render('../views/pages/carro.ejs',{model,deleteCart})
+            return;
+        }
+        res.render('../views/pages/carro.ejs',{model,deleteCart})
     } catch (error) {
         console.log('error en getallpr',error)
         winston.errorLogger.error(error)
@@ -90,7 +111,7 @@ const getAllProducts=async(req,res)=>{
 }
 const addProduct=async(req,res)=>{
     try {
-        let prod=req.body.title
+       /* let prod=req.body.title
         let prodF=prodModel.findOne({title:prod})
         console.log(req.session.cart)
         let cart
@@ -100,7 +121,38 @@ const addProduct=async(req,res)=>{
             cart.push(prodF)
             req.session.cart=cart
         }
-        
+        */
+        //Load (or initialize) the cart
+        req.session.cart = req.session.cart || {};
+        let cart = req.session.cart;
+
+        //Read the incoming product data
+        let id = req.param('item_id');
+
+        //Locate the product t o be added
+        prodModel.findOne({title:prod},function (err, prod){
+            if (err) {
+                console.log('Error adding product to cart: ', err);
+                res.render('../views/pages/carro.ejs',{model,deleteCart})
+                return;
+            }
+
+            //Add or increase the product quantity in the shopping cart.
+            if (cart[id]) {
+                cart[id].qty++;
+            }
+            else {
+                cart[id] = {
+                    name: prod.name,
+                    price: prod.price,
+                    prettyPrice: prod.prettyPrice(),
+                    qty: 1
+                };
+            }
+
+            //Display the cart for the user
+            res.render('../views/pages/carro.ejs',{model,deleteCart})})
+       
         res.render('../views/pages/carro.ejs',{cart,deleteCart})
     } catch (error) {
         console.log('error en addprod',error)
