@@ -66,15 +66,23 @@ const failRoute=async(req,res)=>{
     }
 }
 
-const deleteCart= ()=>{
-    req.session.destroy(err=>{
+const deleteCart=async (req,res)=>{
+    try {
+        await cartController.deleteCart(req,res)
+        req.session.destroy(err=>{
         if(err) console.log('Error trying delete the cart '+err)
     })
+    res.render('../views/pages/carro.ejs')
+    } catch (error) {
+        console.log('error en deletecart',error)
+        winston.errorLogger.error(error)
+    }
+    
 }
 
 const getProductsOnCart=async(req,res)=>{
     try {
-        let cart=cartController.getProductsOnCart(req,res)
+        let cart=await cartController.getProductsOnCart(req,res)
         
         res.render('../views/pages/carro.ejs',{cart})
     } catch (error) {
@@ -82,12 +90,10 @@ const getProductsOnCart=async(req,res)=>{
         winston.errorLogger.error(error)
     }
 }
-let cart
+
 const addProductToCart=async(req,res)=>{
     try {
-        let cart=cartController.addProductsToCart(req,res)
-        
-
+        let cart=await cartController.addProductsToCart(req,res)
         res.render('../views/pages/carro.ejs',{cart})
     } catch (error) {
         console.log('error en addprod',error)
@@ -114,4 +120,4 @@ const addProds=async(req,res)=>{
     }
 }
 
-module.exports={getLogin,getRegister,login,register,getLogout,failRoute,getProductsOnCart,addProductToCart,getProds,addProds}
+module.exports={getLogin,getRegister,login,register,getLogout,failRoute,getProductsOnCart,addProductToCart,getProds,addProds,deleteCart}

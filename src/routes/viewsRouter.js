@@ -19,6 +19,7 @@ Router.get('/logout', viewsController.getLogout);
 //carro
 Router.get('/cart',viewsController.getProductsOnCart)
 Router.post('/cart',viewsController.addProductToCart)
+Router.post('/cartdeleted',viewsController.deleteCart)
 
 
 //products

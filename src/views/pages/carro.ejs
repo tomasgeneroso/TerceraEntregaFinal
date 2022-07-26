@@ -8,7 +8,7 @@
       </div> 
       <div class="col-3 ">
         <form action="/cart" class=""method="post">          
-              <input type="text" class="form-control" placeholder="Product title..." id="InputTitle">
+              <input type="text" name='title'class="form-control" placeholder="Product title..." id="InputTitle">
               <button type="submit" class="btn btn-success">Add product to cart</button>
         </form>
       </div> 
@@ -28,16 +28,14 @@
             </thead>
             <tbody>
               <tr>
-                <% cart.items.forEach(prod=>{ %>   
-                <td><%={prod.title}%></td>
-                
-                <% }); %> 
+             
               </tr>
             </tbody>
           </table>
     </div>
-    <button type="button" onclick="deleteCart()" class="btn btn-danger">Delete cart</button>
-
+    <form action='/cartdeleted' method="POST">
+      <button type="button" class="btn btn-danger">Delete cart</button>
+    </form>
 </div>
 
 <%- include('../partials/footer.ejs') %>

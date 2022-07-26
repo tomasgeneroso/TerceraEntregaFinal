@@ -15,7 +15,6 @@ passport.use('login',new LocalStrategy((username,password,done)=>{
         winston.errorLogger.error(error)
     }
 }))
-
 passport.use('register',new LocalStrategy({passReqToCallback:true},(req,username,password,done)=>{
     try {
         let data = req.body;

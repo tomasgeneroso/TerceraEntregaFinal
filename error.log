@@ -80,3 +80,40 @@
 {"level":"error","timestamp":"2022-07-24T21:27:08.225Z"}
 {"level":"error","timestamp":"2022-07-24T22:04:25.398Z"}
 {"level":"error","timestamp":"2022-07-24T22:04:28.562Z"}
+{"level":"error","timestamp":"2022-07-26T01:06:01.048Z"}
+{"level":"error","timestamp":"2022-07-26T16:29:46.873Z"}
+{"level":"error","timestamp":"2022-07-26T16:29:59.753Z"}
+{"level":"error","timestamp":"2022-07-26T16:33:23.600Z"}
+{"level":"error","timestamp":"2022-07-26T16:34:01.817Z"}
+{"level":"error","timestamp":"2022-07-26T16:34:31.795Z"}
+{"level":"error","timestamp":"2022-07-26T16:34:55.880Z"}
+{"level":"error","timestamp":"2022-07-26T16:37:52.055Z"}
+{"level":"error","timestamp":"2022-07-26T16:39:10.724Z"}
+{"level":"error","timestamp":"2022-07-26T16:39:47.882Z"}
+{"level":"error","timestamp":"2022-07-26T17:11:26.154Z"}
+{"level":"error","timestamp":"2022-07-26T17:12:29.459Z"}
+{"level":"error","timestamp":"2022-07-26T17:19:17.290Z"}
+{"level":"error","timestamp":"2022-07-26T17:20:33.329Z"}
+{"level":"error","timestamp":"2022-07-26T17:31:38.187Z"}
+{"level":"error","timestamp":"2022-07-26T17:35:03.326Z"}
+{"level":"error","timestamp":"2022-07-26T17:37:39.389Z"}
+{"level":"error","timestamp":"2022-07-26T17:41:40.812Z"}
+{"level":"error","timestamp":"2022-07-26T17:42:07.873Z"}
+{"level":"error","timestamp":"2022-07-26T18:11:43.059Z"}
+{"level":"error","timestamp":"2022-07-26T18:11:59.486Z"}
+{"level":"error","timestamp":"2022-07-26T18:19:25.425Z"}
+{"level":"error","timestamp":"2022-07-26T18:21:15.583Z"}
+{"level":"error","timestamp":"2022-07-26T18:22:31.818Z"}
+{"level":"error","timestamp":"2022-07-26T18:23:41.765Z"}
+{"level":"error","timestamp":"2022-07-26T18:24:27.723Z"}
+{"level":"error","timestamp":"2022-07-26T19:35:09.507Z"}
+{"level":"error","timestamp":"2022-07-26T19:36:06.694Z"}
+{"level":"error","timestamp":"2022-07-26T19:37:06.637Z"}
+{"level":"error","timestamp":"2022-07-26T19:40:44.715Z"}
+{"level":"error","timestamp":"2022-07-26T19:41:56.966Z"}
+{"level":"error","timestamp":"2022-07-26T19:42:14.311Z"}
+{"level":"error","timestamp":"2022-07-26T20:07:34.276Z"}
+{"level":"error","message":"product doesn-t exists","timestamp":"2022-07-26T20:08:27.025Z"}
+{"level":"error","message":"product doesn-t exists","timestamp":"2022-07-26T20:18:39.584Z"}
+{"level":"error","message":"product doesn-t exists","timestamp":"2022-07-26T20:23:17.984Z"}
+{"level":"error","message":"product doesn-t exists","timestamp":"2022-07-26T20:24:03.399Z"}

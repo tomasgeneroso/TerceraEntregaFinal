@@ -15,7 +15,6 @@ class User{
         try {  
             let {name,surname,email,password,age,address,phone,profilePhoto}=obj
             let passwordH=await bcrypt.hash(password, 10)
-            
             let response= new userModel({email:email,password:passwordH,name:name,surname:surname,age:age,address:address,phone:toString(phone),profilePhoto:profilePhoto})
             response.save(el=>{if(el){winston.errorLogger.error(el)}});
             return response
