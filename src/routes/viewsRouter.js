@@ -17,8 +17,8 @@ Router.post('/',viewsController.login);
 Router.get('/logout', viewsController.getLogout);
 
 //carro
-Router.get('/cart',viewsController.getAllProducts)
-Router.post('/cart',viewsController.addProduct)
+Router.get('/cart',viewsController.getProductsOnCart)
+Router.post('/cart',viewsController.addProductToCart)
 
 
 //products

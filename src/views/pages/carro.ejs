@@ -28,8 +28,8 @@
             </thead>
             <tbody>
               <tr>
-                <% model.forEach(prod=>{ %>   
-                <td><%={prod}%></td>
+                <% cart.items.forEach(prod=>{ %>   
+                <td><%={prod.title}%></td>
                 
                 <% }); %> 
               </tr>

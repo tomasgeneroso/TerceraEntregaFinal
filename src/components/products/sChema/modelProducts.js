@@ -27,7 +27,13 @@ class Product{
             response.save(el=>{if(el){winston.errorLogger.error(el)}});
             return response
         } catch (error) {
-            
+            winston.errorLogger.error(error)
+        }
+    }
+    async reduceStock(title){
+        try {
+            prod.findOneAndUpdate({title:title},{stock:stock-1},function(err){winston.errorLogger.error(err)})
+        } catch (error) {
             winston.errorLogger.error(error)
         }
     }
