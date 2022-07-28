@@ -4,8 +4,8 @@ let cart=new Cart()
 
 const getProductsOnCart=async (req,res)=>{
     try {
-        let idCart=req.session.id
-        
+        let cookieTrim=req.headers.cookie
+        let idCart=cookieTrim.substring(12,(cookieTrim.length))
         let response=await cart.getProductsOnCart(idCart)
         return response
     } catch (error) {
@@ -14,9 +14,9 @@ const getProductsOnCart=async (req,res)=>{
 }
 const addProductsToCart=async (req,res)=>{
     try {
-        let idCart=req.session.id
+        let cookieTrim=req.headers.cookie
+        let idCart=cookieTrim.substring(12,(cookieTrim.length))
         let idProd=req.body.title
-            
         let response=await cart.addProductsToCart(idCart,idProd)
         return response
     } catch (error) {
@@ -25,7 +25,8 @@ const addProductsToCart=async (req,res)=>{
 }
 const deleteCart=async(req,res)=>{
     try {
-        let idCart=req.session.id
+        let cookieTrim=req.headers.cookie
+        let idCart=cookieTrim.substring(12,(cookieTrim.length))
         let cartDeleted=await cart.deleteCart(idCart)
         return cartDeleted
     } catch (error) {

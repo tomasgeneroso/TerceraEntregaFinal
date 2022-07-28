@@ -23,18 +23,24 @@
                 <th scope="col">Title</th>
                 <th scope="col">Price</th>
                 <th scope="col">Description</th>
-                <th scope="col">Stock</th>
+                
               </tr>
             </thead>
             <tbody>
               <tr>
-             
+                <% for (let i = 0; i < cart.length; i++) {%>
+                <th><%=cart[i].title %></th>
+                <th><%=cart[i].price %></th>
+                <th><%=cart[i].description %></th>
+                <%console.log(cart[i].description )%>
+                
+                <% } %> 
               </tr>
             </tbody>
           </table>
     </div>
     <form action='/cartdeleted' method="POST">
-      <button type="button" class="btn btn-danger">Delete cart</button>
+      <button type="submit" class="btn btn-danger">Delete cart</button>
     </form>
 </div>
 

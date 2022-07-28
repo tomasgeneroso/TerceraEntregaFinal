@@ -6,14 +6,14 @@ class Cart{
         try { 
             let cart=await cartModel.findOne({id:idCart})
             if(cart){ //si existe el carro
-                console.log('carro existente',cart)
+                
                 return cart
             }else{ //si no existe el carro lo crea
                 let newcart = new cartModel({id:idCart,items:[]});
                 newcart.save(function (err) {
                     console.log(err);
                 });
-                console.log('carro nuevo creado',newcart)
+                
                 return newcart
             }
         } catch (error) {
@@ -27,17 +27,18 @@ class Cart{
             let productF=await product.find({title:idProd})
             //let cartF=await this.getCart(idCart)
             let cartF=await cartModel.findOne({id:idCart})
-            console.log(productF,cartF)
+           
             //si existe producto y carro
             if(productF && cartF){
                 let response=await cartModel.updateOne( { id: idCart }, { $push: { items: productF } });
+                
                 return response
             }
             if(!cartF){
-                let cartF=await this.getCart(idCart)
+                await this.getCart(idCart)
+                
                 let response=await cartModel.updateOne( { id: idCart }, { $push: { items: productF } });
                 return response
-                winston.errorLogger.error('product doesn-t exists')
             }
         } catch (error) {
             console.log('error en addproductstocart',error)
@@ -47,6 +48,7 @@ class Cart{
     async getProductsOnCart(idCart){
         try {
             let cart=await this.getCart(idCart)
+            
             return cart.items
         } catch (error) {
             winston.errorLogger.error(error)
@@ -55,7 +57,7 @@ class Cart{
     async deleteCart(idCart){
         try {
             //busca producto 
-            let cartF=await this.getCart(idCart)
+            let cartF=await cartModel.findOne({id:idCart})
             //si existe
             if(cartF){
                 let cartDeleted=await cartModel.deleteOne({id:idCart})

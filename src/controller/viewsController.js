@@ -71,8 +71,8 @@ const deleteCart=async (req,res)=>{
         await cartController.deleteCart(req,res)
         req.session.destroy(err=>{
         if(err) console.log('Error trying delete the cart '+err)
+        res.render('../views/pages/carro.ejs')
     })
-    res.render('../views/pages/carro.ejs')
     } catch (error) {
         console.log('error en deletecart',error)
         winston.errorLogger.error(error)
@@ -83,7 +83,6 @@ const deleteCart=async (req,res)=>{
 const getProductsOnCart=async(req,res)=>{
     try {
         let cart=await cartController.getProductsOnCart(req,res)
-        
         res.render('../views/pages/carro.ejs',{cart})
     } catch (error) {
         console.log('error en getallpr',error)
