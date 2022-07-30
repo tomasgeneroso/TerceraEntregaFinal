@@ -6,17 +6,22 @@
       <div class="col-3">
         <h1>CartID</h1>
       </div> 
-      <div class="col-3 ">
+      <div class="col-6 ">
         <form action="/cart" class=""method="post">          
               <input type="text" name='title'class="form-control" placeholder="Product title..." id="InputTitle">
-              <button type="submit" class="btn btn-success">Add product to cart</button>
+              <button type="submit" class="btn col-3 btn-success">Add to cart</button>
+        </form>
+      </div>
+      <div class="col-3 ">
+        <form action='/cartdeleted' method="POST">
+          <button type="submit" class="btn btn-danger">Delete cart</button>
         </form>
       </div> 
     </div>
     
       
     <!--HACER UN RELLENADO AUTOMATICO-->
-    <div class="">
+    <div class="col-10">
         <table class="table">
             <thead>
               <tr>
@@ -27,21 +32,27 @@
               </tr>
             </thead>
             <tbody>
+              <% for (let i = 0; i < cart.length; i++) {%>
               <tr>
-                <% for (let i = 0; i < cart.length; i++) {%>
                 <th><%=cart[i].title %></th>
                 <th><%=cart[i].price %></th>
                 <th><%=cart[i].description %></th>
-                <%console.log(cart[i].description )%>
-                
-                <% } %> 
               </tr>
+              <% } %> 
             </tbody>
+
           </table>
     </div>
-    <form action='/cartdeleted' method="POST">
-      <button type="submit" class="btn btn-danger">Delete cart</button>
-    </form>
+    <div>
+      <h4>
+        Products on cart: <%=JSON.stringify(quantity) %> </th>
+      </h4>
+      <h4>
+        Cart price   $ <%=JSON.stringify(total) %>  </th>
+      </h4>
+      
+    </div>
+
 </div>
 
 <%- include('../partials/footer.ejs') %>

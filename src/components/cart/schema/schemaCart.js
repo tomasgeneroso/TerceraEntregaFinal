@@ -6,7 +6,9 @@ const cartSchema= new mongoose.Schema({
         description:{type:String},
         price:{type:Number},
         stock:  {type:Number, required:true}
-    }]
+    }],
+    quantity:{type:Number},
+    total:{type:Number}
 })
 
 const cartModel= mongoose.model('carts',cartSchema)

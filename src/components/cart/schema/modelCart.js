@@ -1,19 +1,15 @@
 const cartModel=require('./schemaCart.js')
-const product=require('../../products/sChema/schemaProducts.js')
+
 let winston = require('../../../utils/winston.js');
 class Cart{
     async getCart(idCart){
         try { 
             let cart=await cartModel.findOne({id:idCart})
-            if(cart){ //si existe el carro
-                
+            if(cart){ //si existe el carro               
                 return cart
             }else{ //si no existe el carro lo crea
-                let newcart = new cartModel({id:idCart,items:[]});
-                newcart.save(function (err) {
-                    console.log(err);
-                });
-                
+                let newcart = new cartModel({id:idCart,items:[],quantity:0,total:0});
+                newcart.save(function (err) {console.log(err);});
                 return newcart
             }
         } catch (error) {
@@ -21,25 +17,12 @@ class Cart{
             winston.errorLogger.error(error)
         }
     }
-    async addProductsToCart(idCart,idProd){
+    async addProductsToCart(cartF,productF){
         try {
-            //busca producto 
-            let productF=await product.find({title:idProd})
-            //let cartF=await this.getCart(idCart)
-            let cartF=await cartModel.findOne({id:idCart})
-           
-            //si existe producto y carro
-            if(productF && cartF){
-                let response=await cartModel.updateOne( { id: idCart }, { $push: { items: productF } });
-                
-                return response
-            }
-            if(!cartF){
-                await this.getCart(idCart)
-                
-                let response=await cartModel.updateOne( { id: idCart }, { $push: { items: productF } });
-                return response
-            }
+            let price=productF[0].price+cartF.total
+            await cartModel.updateOne( { id: cartF.id }, { $push: { items: productF }, $inc:{quantity:1},$set:{total:price} });
+            let response=await cartModel.findOne({id:cartF.id})
+            return response
         } catch (error) {
             console.log('error en addproductstocart',error)
             winston.errorLogger.error(error)
@@ -47,9 +30,8 @@ class Cart{
     }
     async getProductsOnCart(idCart){
         try {
-            let cart=await this.getCart(idCart)
-            
-            return cart.items
+            let cart=await this.getCart(idCart)    
+            return cart
         } catch (error) {
             winston.errorLogger.error(error)
         }

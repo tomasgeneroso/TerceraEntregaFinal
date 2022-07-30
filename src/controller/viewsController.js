@@ -68,10 +68,13 @@ const failRoute=async(req,res)=>{
 
 const deleteCart=async (req,res)=>{
     try {
-        await cartController.deleteCart(req,res)
+        let cart =await cartController.deleteCart(req,res)
+        let quantity=0
+        let total=0
         req.session.destroy(err=>{
         if(err) console.log('Error trying delete the cart '+err)
-        res.render('../views/pages/carro.ejs')
+        res.render('../views/pages/carro.ejs',{cart,quantity,total})
+        
     })
     } catch (error) {
         console.log('error en deletecart',error)
@@ -82,8 +85,11 @@ const deleteCart=async (req,res)=>{
 
 const getProductsOnCart=async(req,res)=>{
     try {
-        let cart=await cartController.getProductsOnCart(req,res)
-        res.render('../views/pages/carro.ejs',{cart})
+        let cartF=await cartController.getProductsOnCart(req,res)
+        let quantity=cartF.quantity
+        let cart=cartF.items
+        let total=cartF.total
+        res.render('../views/pages/carro.ejs',{cart,quantity,total})
     } catch (error) {
         console.log('error en getallpr',error)
         winston.errorLogger.error(error)
@@ -92,8 +98,14 @@ const getProductsOnCart=async(req,res)=>{
 
 const addProductToCart=async(req,res)=>{
     try {
-        let cart=await cartController.addProductsToCart(req,res)
-        res.render('../views/pages/carro.ejs',{cart})
+        let cartF=await cartController.addProductsToCart(req,res)
+        console.log('carrito add prod',cartF)
+        let quantity=cartF.quantity
+        console.log('quantity ',quantity)
+        let cart=cartF.items
+        console.log('cart ',cart)
+        let total=cartF.total
+        res.render('../views/pages/carro.ejs',{cart,quantity,total})
     } catch (error) {
         console.log('error en addprod',error)
         winston.errorLogger.error(error)
@@ -102,6 +114,8 @@ const addProductToCart=async(req,res)=>{
 
 const getProds=async(req,res)=>{
     try {
+        //luego enviar prods para mostrarlos
+        let prods=await productController.getAllProducts()
         let confirmation=false
         res.render('../views/pages/products.ejs',{confirmation})
     } catch (error) {
@@ -110,7 +124,8 @@ const getProds=async(req,res)=>{
 }
 const addProds=async(req,res)=>{
     try {
-        let product=await productController.addProduct(req,res)
+        let data = req.body;
+        let product=await productController.addProduct(data)
         let confirmation
         if(product){ confirmation=true}else{ confirmation=false}
         res.render('../views/pages/products.ejs',{confirmation})

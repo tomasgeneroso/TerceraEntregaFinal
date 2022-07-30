@@ -3,17 +3,16 @@ const Product=require('../sChema/modelProducts.js')
 
 let product=new Product()
 
-const getAllProducts=async (req,res)=>{
+const getAllProducts=async ()=>{
     try {
         let data = await product.getAllProducts()
-        res.send({data:data})
+        return data
     } catch (error) {
         winston.errorLogger.error(error)
     }
 }
-const addProduct=async (req,res)=>{
+const addProduct=async (data)=>{
     try {
-        let data = req.body;
         if (!data.title || !data.price || !data.stock) {
             res.status(400).send({
                 message: 'Faltan datos'
@@ -43,4 +42,4 @@ const  getProduct=async (req,res)=>{
         winston.errorLogger.error(error)
     }
 }
-module.exports={getAllProducts,addProduct,getProduct}
+module.exports={getAllProducts,addProduct,getProduct,product}

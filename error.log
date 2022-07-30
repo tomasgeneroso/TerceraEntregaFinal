@@ -118,3 +118,115 @@
 {"level":"error","message":"product doesn-t exists","timestamp":"2022-07-26T20:23:17.984Z"}
 {"level":"error","message":"product doesn-t exists","timestamp":"2022-07-26T20:24:03.399Z"}
 {"level":"error","timestamp":"2022-07-28T22:55:14.363Z"}
+{"level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/","reason":{"commonWireVersion":13,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"maxElectionId":"7fffffff0000000000000005","maxSetVersion":1,"servers":{},"setName":"atlas-3dce4g-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"timestamp":"2022-07-29T16:10:52.505Z"}
+{"level":"error","timestamp":"2022-07-29T16:41:26.588Z"}
+{"level":"error","timestamp":"2022-07-29T16:52:48.875Z"}
+{"level":"error","timestamp":"2022-07-29T17:04:25.750Z"}
+{"level":"error","timestamp":"2022-07-29T17:04:25.752Z"}
+{"level":"error","timestamp":"2022-07-29T17:14:02.365Z"}
+{"level":"error","timestamp":"2022-07-29T17:14:07.421Z"}
+{"level":"error","timestamp":"2022-07-29T17:16:27.980Z"}
+{"level":"error","timestamp":"2022-07-29T17:17:44.977Z"}
+{"level":"error","timestamp":"2022-07-29T17:18:07.994Z"}
+{"kind":"number","message":"Cast to number failed for value \"undefined\" (type undefined) at path \"total\"","name":"CastError","path":"total","stringValue":"\"undefined\"","valueType":"undefined"}
+{"level":"error","timestamp":"2022-07-29T17:28:36.243Z"}
+{"kind":"number","message":"Cast to number failed for value \"undefined\" (type undefined) at path \"total\"","name":"CastError","path":"total","stringValue":"\"undefined\"","valueType":"undefined"}
+{"level":"error","timestamp":"2022-07-29T17:38:00.708Z"}
+{"kind":"number","message":"Cast to number failed for value \"undefined\" (type undefined) at path \"total\"","name":"CastError","path":"total","stringValue":"\"undefined\"","valueType":"undefined"}
+{"level":"error","timestamp":"2022-07-29T17:38:04.970Z"}
+{"kind":"Number","message":"Cast to Number failed for value \"NaN\" (type number) at path \"total\"","name":"CastError","path":"total","reason":{"actual":false,"code":"ERR_ASSERTION","expected":true,"generatedMessage":true,"operator":"=="},"stringValue":"\"NaN\"","value":null,"valueType":"number"}
+{"level":"error","timestamp":"2022-07-29T17:40:16.602Z"}
+{"kind":"number","message":"Cast to number failed for value \"undefined\" (type undefined) at path \"total\"","name":"CastError","path":"total","stringValue":"\"undefined\"","valueType":"undefined"}
+{"level":"error","timestamp":"2022-07-29T17:40:43.710Z"}
+{"kind":"number","message":"Cast to number failed for value \"undefined\" (type undefined) at path \"total\"","name":"CastError","path":"total","stringValue":"\"undefined\"","valueType":"undefined"}
+{"level":"error","timestamp":"2022-07-29T17:44:31.864Z"}
+{"level":"error","timestamp":"2022-07-29T17:45:10.418Z"}
+{"level":"error","timestamp":"2022-07-29T17:45:10.420Z"}
+{"level":"error","timestamp":"2022-07-29T17:45:43.896Z"}
+{"level":"error","timestamp":"2022-07-29T17:45:43.898Z"}
+{"level":"error","timestamp":"2022-07-29T18:01:02.827Z"}
+{"level":"error","timestamp":"2022-07-29T18:01:02.829Z"}
+{"level":"error","timestamp":"2022-07-29T18:04:59.916Z"}
+{"level":"error","timestamp":"2022-07-29T18:04:59.918Z"}
+{"level":"error","timestamp":"2022-07-29T18:06:00.749Z"}
+{"level":"error","timestamp":"2022-07-29T18:06:00.751Z"}
+{"level":"error","timestamp":"2022-07-29T18:06:02.005Z"}
+{"level":"error","timestamp":"2022-07-29T18:06:02.006Z"}
+{"level":"error","timestamp":"2022-07-29T18:10:54.606Z"}
+{"level":"error","timestamp":"2022-07-29T18:10:54.608Z"}
+{"level":"error","timestamp":"2022-07-29T18:16:21.597Z"}
+{"level":"error","timestamp":"2022-07-29T18:16:21.599Z"}
+{"level":"error","timestamp":"2022-07-29T18:17:23.543Z"}
+{"level":"error","timestamp":"2022-07-29T18:17:23.544Z"}
+{"level":"error","timestamp":"2022-07-29T18:18:36.607Z"}
+{"level":"error","timestamp":"2022-07-29T18:18:36.608Z"}
+{"level":"error","timestamp":"2022-07-29T19:17:24.432Z"}
+{"level":"error","timestamp":"2022-07-29T19:17:24.434Z"}
+{"level":"error","timestamp":"2022-07-29T19:20:46.432Z"}
+{"level":"error","timestamp":"2022-07-29T19:20:46.434Z"}
+{"kind":"number","message":"Cast to number failed for value \"undefined\" (type undefined) at path \"total\"","name":"CastError","path":"total","stringValue":"\"undefined\"","valueType":"undefined"}
+{"level":"error","timestamp":"2022-07-29T19:21:48.181Z"}
+{"kind":"number","message":"Cast to number failed for value \"undefined\" (type undefined) at path \"total\"","name":"CastError","path":"total","stringValue":"\"undefined\"","valueType":"undefined"}
+{"level":"error","timestamp":"2022-07-29T19:30:30.873Z"}
+{"kind":"number","message":"Cast to number failed for value \"undefined\" (type undefined) at path \"total\"","name":"CastError","path":"total","stringValue":"\"undefined\"","valueType":"undefined"}
+{"level":"error","timestamp":"2022-07-29T19:33:52.073Z"}
+{"kind":"number","message":"Cast to number failed for value \"undefined\" (type undefined) at path \"total\"","name":"CastError","path":"total","stringValue":"\"undefined\"","valueType":"undefined"}
+{"level":"error","timestamp":"2022-07-29T19:35:41.481Z"}
+{"kind":"number","message":"Cast to number failed for value \"undefined\" (type undefined) at path \"total\"","name":"CastError","path":"total","stringValue":"\"undefined\"","valueType":"undefined"}
+{"level":"error","timestamp":"2022-07-29T19:35:59.503Z"}
+{"kind":"number","message":"Cast to number failed for value \"undefined\" (type undefined) at path \"total\"","name":"CastError","path":"total","stringValue":"\"undefined\"","valueType":"undefined"}
+{"level":"error","timestamp":"2022-07-29T19:37:15.851Z"}
+{"kind":"number","message":"Cast to number failed for value \"undefined\" (type undefined) at path \"total\"","name":"CastError","path":"total","stringValue":"\"undefined\"","valueType":"undefined"}
+{"level":"error","timestamp":"2022-07-29T19:39:03.374Z"}
+{"kind":"number","message":"Cast to number failed for value \"undefined\" (type undefined) at path \"total\"","name":"CastError","path":"total","stringValue":"\"undefined\"","valueType":"undefined"}
+{"level":"error","timestamp":"2022-07-29T19:41:07.850Z"}
+{"kind":"number","message":"Cast to number failed for value \"undefined\" (type undefined) at path \"total\"","name":"CastError","path":"total","stringValue":"\"undefined\"","valueType":"undefined"}
+{"level":"error","timestamp":"2022-07-29T19:46:33.093Z"}
+{"kind":"number","message":"Cast to number failed for value \"undefined\" (type undefined) at path \"total\"","name":"CastError","path":"total","stringValue":"\"undefined\"","valueType":"undefined"}
+{"level":"error","timestamp":"2022-07-30T00:28:02.781Z"}
+{"kind":"number","message":"Cast to number failed for value \"undefined\" (type undefined) at path \"total\"","name":"CastError","path":"total","stringValue":"\"undefined\"","valueType":"undefined"}
+{"level":"error","timestamp":"2022-07-30T00:28:49.791Z"}
+{"kind":"number","message":"Cast to number failed for value \"undefined\" (type undefined) at path \"total\"","name":"CastError","path":"total","stringValue":"\"undefined\"","valueType":"undefined"}
+{"level":"error","timestamp":"2022-07-30T00:30:03.312Z"}
+{"kind":"number","message":"Cast to number failed for value \"undefined\" (type undefined) at path \"total\"","name":"CastError","path":"total","stringValue":"\"undefined\"","valueType":"undefined"}
+{"level":"error","timestamp":"2022-07-30T00:30:35.472Z"}
+{"level":"error","timestamp":"2022-07-30T00:32:49.029Z"}
+{"level":"error","timestamp":"2022-07-30T00:32:49.031Z"}
+{"kind":"Number","message":"Cast to Number failed for value \"NaN\" (type number) at path \"total\"","name":"CastError","path":"total","reason":{"actual":false,"code":"ERR_ASSERTION","expected":true,"generatedMessage":true,"operator":"=="},"stringValue":"\"NaN\"","value":null,"valueType":"number"}
+{"level":"error","timestamp":"2022-07-30T00:33:23.692Z"}
+{"kind":"Number","message":"Cast to Number failed for value \"NaN\" (type number) at path \"total\"","name":"CastError","path":"total","reason":{"actual":false,"code":"ERR_ASSERTION","expected":true,"generatedMessage":true,"operator":"=="},"stringValue":"\"NaN\"","value":null,"valueType":"number"}
+{"level":"error","timestamp":"2022-07-30T00:34:55.341Z"}
+{"kind":"Number","message":"Cast to Number failed for value \"NaN\" (type number) at path \"total\"","name":"CastError","path":"total","reason":{"actual":false,"code":"ERR_ASSERTION","expected":true,"generatedMessage":true,"operator":"=="},"stringValue":"\"NaN\"","value":null,"valueType":"number"}
+{"level":"error","timestamp":"2022-07-30T00:35:44.324Z"}
+{"level":"error","timestamp":"2022-07-30T01:38:01.111Z"}
+{"level":"error","timestamp":"2022-07-30T01:38:01.113Z"}
+{"level":"error","timestamp":"2022-07-30T01:41:24.563Z"}
+{"level":"error","timestamp":"2022-07-30T01:41:24.565Z"}
+{"level":"error","timestamp":"2022-07-30T01:41:26.164Z"}
+{"level":"error","timestamp":"2022-07-30T01:41:26.165Z"}
+{"kind":"Number","message":"Cast to Number failed for value \"NaN\" (type number) at path \"total\"","name":"CastError","path":"total","reason":{"actual":false,"code":"ERR_ASSERTION","expected":true,"generatedMessage":true,"operator":"=="},"stringValue":"\"NaN\"","value":null,"valueType":"number"}
+{"level":"error","timestamp":"2022-07-30T01:42:05.309Z"}
+{"level":"error","timestamp":"2022-07-30T01:46:05.833Z"}
+{"level":"error","timestamp":"2022-07-30T01:46:05.835Z"}
+{"level":"error","timestamp":"2022-07-30T01:47:38.480Z"}
+{"level":"error","timestamp":"2022-07-30T01:47:38.482Z"}
+{"kind":"Number","message":"Cast to Number failed for value \"NaN\" (type number) at path \"total\"","name":"CastError","path":"total","reason":{"actual":false,"code":"ERR_ASSERTION","expected":true,"generatedMessage":true,"operator":"=="},"stringValue":"\"NaN\"","value":null,"valueType":"number"}
+{"level":"error","timestamp":"2022-07-30T02:10:38.345Z"}
+{"level":"error","timestamp":"2022-07-30T02:10:38.346Z"}
+{"kind":"Number","message":"Cast to Number failed for value \"NaN\" (type number) at path \"total\"","name":"CastError","path":"total","reason":{"actual":false,"code":"ERR_ASSERTION","expected":true,"generatedMessage":true,"operator":"=="},"stringValue":"\"NaN\"","value":null,"valueType":"number"}
+{"level":"error","timestamp":"2022-07-30T02:10:55.396Z"}
+{"level":"error","timestamp":"2022-07-30T02:10:55.397Z"}
+{"kind":"Number","message":"Cast to Number failed for value \"NaN\" (type number) at path \"total\"","name":"CastError","path":"total","reason":{"actual":false,"code":"ERR_ASSERTION","expected":true,"generatedMessage":true,"operator":"=="},"stringValue":"\"NaN\"","value":null,"valueType":"number"}
+{"level":"error","timestamp":"2022-07-30T02:12:03.837Z"}
+{"kind":"Number","message":"Cast to Number failed for value \"NaN\" (type number) at path \"total\"","name":"CastError","path":"total","reason":{"actual":false,"code":"ERR_ASSERTION","expected":true,"generatedMessage":true,"operator":"=="},"stringValue":"\"NaN\"","value":null,"valueType":"number"}
+{"level":"error","timestamp":"2022-07-30T02:12:48.000Z"}
+{"kind":"Number","message":"Cast to Number failed for value \"NaN\" (type number) at path \"total\"","name":"CastError","path":"total","reason":{"actual":false,"code":"ERR_ASSERTION","expected":true,"generatedMessage":true,"operator":"=="},"stringValue":"\"NaN\"","value":null,"valueType":"number"}
+{"level":"error","timestamp":"2022-07-30T02:13:02.892Z"}
+{"kind":"Number","message":"Cast to Number failed for value \"NaN\" (type number) at path \"total\"","name":"CastError","path":"total","reason":{"actual":false,"code":"ERR_ASSERTION","expected":true,"generatedMessage":true,"operator":"=="},"stringValue":"\"NaN\"","value":null,"valueType":"number"}
+{"level":"error","timestamp":"2022-07-30T02:15:05.616Z"}
+{"level":"error","timestamp":"2022-07-30T02:16:29.177Z"}
+{"level":"error","timestamp":"2022-07-30T02:16:29.180Z"}
+{"level":"error","timestamp":"2022-07-30T02:16:49.425Z"}
+{"level":"error","timestamp":"2022-07-30T02:16:49.427Z"}
+{"level":"error","timestamp":"2022-07-30T02:18:00.472Z"}
+{"level":"error","timestamp":"2022-07-30T02:18:00.474Z"}
