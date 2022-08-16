@@ -1,7 +1,7 @@
 //PASSPORT
 const passport = require('passport')
 const LocalStrategy = require('passport-local').Strategy
-let {user}=require('../DAOS/barrel.js')
+let user=require('../DAOS/barrel.js').user
 passport.use('login',new LocalStrategy(async (username,password,done)=>{
     try {
         let userF=await user.validateLogin(username,password)

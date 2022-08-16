@@ -12,11 +12,11 @@ const passport = require('passport')
 //RUTAS
 //register
 Router.get('/register',viewsController.isLogin ,viewsController.getRegister);
-Router.post('/register',viewsController.register);
+Router.post('/register',passport.authenticate('register',{failureRedirect:'/register',failureMessage:'error in passport authenticate register'}),viewsController.register);
 
 //login
 Router.get('/' ,viewsController.getLogin);
-Router.post('/',viewsController.isLogin,viewsController.login);
+Router.post('/',passport.authenticate('login',{failureRedirect:'/',failureMessage:'error in passport authenticate login'}),viewsController.login);
 
 //logout
 Router.get('/logout', viewsController.getLogout);
