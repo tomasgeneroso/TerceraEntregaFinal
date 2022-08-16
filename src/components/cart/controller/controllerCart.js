@@ -2,6 +2,7 @@ let winston = require('../../../utils/winston.js')
 const Cart=require('../schema/modelCart.js')
 let cart=new Cart()
 let productController=require('../../products/controllers/controllerProducts.js')
+
 const getProductsOnCart=async (req,res)=>{
     try {
         let cookieTrim=req.headers.cookie
@@ -39,4 +40,29 @@ const deleteCart=async(req,res)=>{
     }
 }
 
-module.exports={addProductsToCart,getProductsOnCart,deleteCart}
+//no se llama
+const removeProductsOnCart=async(req,res)=>{
+    try {
+        let idProd=req.body.title
+        //busca producto 
+        let productF=await productController.product.getProduct(idProd)
+        //obtener id cart
+        let cookieTrim=req.headers.cookie
+        let idCart=cookieTrim.substring(12,(cookieTrim.length))
+        let cartF=await cart.getCart(idCart)
+        let response
+        //si existe producto
+        if(productF&&cartF){
+            response=await cart.removeProductsOnCart(cartF,productF[0])
+            return response
+        }else{
+            console.log('error en controller cart ')
+            return error
+        }
+        
+    } catch (error) {
+        winston.errorLogger.error(error)
+    }
+}
+
+module.exports={addProductsToCart,getProductsOnCart,deleteCart,removeProductsOnCart}

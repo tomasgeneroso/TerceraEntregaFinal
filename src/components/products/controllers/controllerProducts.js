@@ -26,11 +26,9 @@ const addProduct=async (data)=>{
         winston.errorLogger.error(error)
     }
 }
-const  getProduct=async (req,res)=>{
+const  getProduct=async (title)=>{
     try {
-        
-        let title = req.body;
-        if (!data.title) {
+        if (!title) {
             res.status(400).send({
                 message: 'No title'
             });

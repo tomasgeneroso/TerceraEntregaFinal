@@ -19,6 +19,7 @@ class Cart{
     }
     async addProductsToCart(cartF,productF){
         try {
+            console.log('productF es en addProductsToCart ',productF)
             let price=productF[0].price+cartF.total
             await cartModel.updateOne( { id: cartF.id }, { $push: { items: productF }, $inc:{quantity:1},$set:{total:price} });
             let response=await cartModel.findOne({id:cartF.id})
@@ -53,19 +54,28 @@ class Cart{
             winston.errorLogger.error(error)
         }
     }
-    /*
-    async removeProductsOnCart(idCart,idProd){
+  
+    async removeProductsOnCart(cartF,productF){
         try {
-            //busca producto 
-            let productF=product.getProduct(idProd)
-            //si existe
-            if(productF){
-                let newCart
-            }
+            let response
+            // console.log('productF[0] es ',productF)
+            //console.log('cartF.id es: ',cartF.id)
+            let cartS=await cartModel.findOne({id:cartF.id},'items')
+            let itemsS=cartS.items
+            
+            //arregar filter para que se borre uno solo...
+            //buscar index -> sacar con split
+            let items=itemsS.filter(e=>{return e.title!=productF.title})
+            console.log('filter es ',items)
+            await cartModel.updateOne({id:cartF.id},{items:items,quantity:quantity-1,total:total-productF.price})
+            response=await cartModel.find({id:cartF.id}) 
+           
+            return  response[0]
         } catch (error) {
+            console.log('error en remove products ',error)
             winston.errorLogger.error(error)
         }
-    }*/
+    }
 }
 
 module.exports=Cart

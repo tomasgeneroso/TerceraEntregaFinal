@@ -5,7 +5,8 @@ let config={
     CLUSTER:process.env.CLUSTER,
     DB:process.env.DB,
     SECRET:process.env.SECRET,
-    PRIVATE_KEY:process.env.PRIVATE_KEY
+    PRIVATE_KEY:process.env.PRIVATE_KEY,
+    MEMORY:process.env.MEMORY
 }
 
 module.exports=config

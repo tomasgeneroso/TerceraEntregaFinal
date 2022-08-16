@@ -3,7 +3,7 @@ let userRouter=express.Router()
 let userController=require('../controllers/controllerUsers.js')
 
 
-userRouter.post('/', passport.authenticate('login', { failureRedirect: "errorLogin", successRedirect: "home" }));
-userRouter.post('/register', passport.authenticate('register', { failureRedirect: "home", successRedirect: "login", failureMessage:"error al verificar"}));
+userRouter.post('/',userController.getUser);
+userRouter.post('/register',userController.addUser);
 userRouter.get('/logout',userController.logOutUser)
 module.exports=userController

@@ -31,12 +31,11 @@ app.use(session({
     rolling: true, 
     saveUninitialized:false,   //crea recien cuando algo es guardado
 }))
-
 //PASSPORT 
 const passport = require('passport')
+
 app.use(passport.initialize());
 app.use(passport.session())
-
 
 if(config.CLUSTER){
     if (cluster.isMaster) {
@@ -53,3 +52,9 @@ if(config.CLUSTER){
     app.listen(PORT,()=>{winston.consoleLogger.info(`Listening port ${PORT}`) })
 }
 
+//si se apaga
+const gracefulShutdown= ()=>{mongoose.connection.close()
+    .then(()=>{console.log('Mongoose disconnected')})
+    .catch(error=>`Error al desconectarse de la bbdd ${error}`)
+
+}

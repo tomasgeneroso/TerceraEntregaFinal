@@ -2,9 +2,10 @@ const productController=require('../components/products/controllers/controllerPr
 const cartController=require('../components/cart/controller/controllerCart.js')
 const userController=require('../components/users/controllers/controllerUsers.js')
 let prodModel = require('../components/products/sChema/schemaProducts.js')
-
 const config=require('../config/config.js')
 let winston = require('../utils/winston.js');
+require('../config/passport.js')
+
 
 const getLogin=async (req, res) => { 
     try {
@@ -31,6 +32,7 @@ const getRegister=async (req, res) => {
     try {
         res.render('../views/pages/register.ejs')     
     } catch (error) {
+        console.log('error en viewsController, getregister')
         winston.errorLogger.error(error)
     }
 }
@@ -39,14 +41,12 @@ const register=async(req,res)=>{
     try {
         let response=await userController.addUser(req,res)
         if(response){
-            
             res.render('../views/pages/login.ejs')
         }else{
-            
             res.render('../views/pages/register.ejs')
         }
     } catch (error) {
-        
+        console.log('error en viewsController, register')
         winston.errorLogger.error(error)
     }
 }
@@ -99,12 +99,9 @@ const getProductsOnCart=async(req,res)=>{
 const addProductToCart=async(req,res)=>{
     try {
         let cartF=await cartController.addProductsToCart(req,res)
-        console.log('carrito add prod',cartF)
-        let quantity=cartF.quantity
-        console.log('quantity ',quantity)
-        let cart=cartF.items
-        console.log('cart ',cart)
-        let total=cartF.total
+        let quantity=cart.quantity
+        let total=cart.total
+        let cart=cartF.items 
         res.render('../views/pages/carro.ejs',{cart,quantity,total})
     } catch (error) {
         console.log('error en addprod',error)
@@ -133,5 +130,33 @@ const addProds=async(req,res)=>{
         winston.errorLogger.error(error)
     }
 }
+const removeProductsOnCart=async(req,res)=>{
+    try {
+        //restar quantity y total, luego agregar si total=0 y quantity==0 entonces no mostrar cart
+        let cart =await cartController.removeProductsOnCart(req,res)
+        console.log('cart es ',cart)
+        let quantity=cart.quantity
+        let total=cart.total
+        console.log(cart)
+        res.render('../views/pages/carro.ejs',{cart,quantity,total})
+    } catch (error) {
+        console.log('error en views ',error)
+        winston.errorLogger.error(error)
+    }
+}
 
-module.exports={getLogin,getRegister,login,register,getLogout,failRoute,getProductsOnCart,addProductToCart,getProds,addProds,deleteCart}
+const isLogin=async(req,res,next)=>{
+    try {
+        if(req.session){
+            next()
+        }else{
+            res.redirect('/register')
+        }
+    } catch (error) {
+        console.log('error en isLogin',error)
+        winston.errorLogger.error(error)
+    }
+    
+}
+
+module.exports={isLogin,getLogin,getRegister,login,register,getLogout,failRoute,getProductsOnCart,addProductToCart,getProds,addProds,deleteCart,removeProductsOnCart}
