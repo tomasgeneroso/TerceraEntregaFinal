@@ -3,33 +3,31 @@ const express=require('express')
 const Router = express.Router()
 //CONTROLLERS
 let viewsController=require('../controller/viewsController.js');
-
 //LOGGER
 let winston = require('../utils/winston.js');
-//PASSPORT
-const passport = require('passport')
-
+//JWT
+let jwt=require('../components/users/controllers/jwt.js')
 //RUTAS
 //register
-Router.get('/register',viewsController.isLogin ,viewsController.getRegister);
-Router.post('/register',passport.authenticate('register',{failureRedirect:'/register',failureMessage:'error in passport authenticate register'}),viewsController.register);
+Router.get('/register',viewsController.getRegister);
+Router.post('/register',viewsController.register);
 
 //login
 Router.get('/' ,viewsController.getLogin);
-Router.post('/',passport.authenticate('login',{failureRedirect:'/',failureMessage:'error in passport authenticate login'}),viewsController.login);
+Router.post('/',jwt.validateToken,viewsController.login);
 
 //logout
-Router.get('/logout', viewsController.getLogout);
+Router.get('/logout',viewsController.getLogout);
 
 //carro
-Router.get('/cart',viewsController.isLogin,viewsController.getProductsOnCart)
+Router.get('/cart',jwt.validateToken,viewsController.getProductsOnCart)
 Router.post('/cart',viewsController.addProductToCart)
 Router.post('/cartdeleted',viewsController.deleteCart)
 Router.post('/itemdeleted',viewsController.removeProductsOnCart)
 
 
 //products
-Router.get('/product',viewsController.isLogin,viewsController.getProds)
+Router.get('/product',jwt.validateToken,viewsController.getProds)
 Router.post('/product',viewsController.addProds)
 
 //fail route

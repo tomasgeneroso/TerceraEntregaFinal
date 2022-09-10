@@ -4,6 +4,16 @@ const config=require('./config/config.js')
 const PORT=config.PORT || 8080
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+//CORS
+const cors = require('cors')
+app.use(cors())
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    
+    next()
+});
 //CLUSTER
 const cluster=require('cluster')
 const numCPUs=require('os').cpus().length
@@ -45,16 +55,17 @@ if(config.CLUSTER){
     } else {
         //hacer cosas
         app.use('/',viewsRouter)
-        app.listen(PORT,()=>{winston.consoleLogger.info(`Listening port ${PORT} on CLUSTER MODE`) })
+     app.listen(PORT,()=>{winston.consoleLogger.info(`Listening port ${PORT} on CLUSTER MODE`) })
     }
+    cluster.on("exit", (worker) => {
+        console.log(`Worker ${worker.process.pid} died`);
+        cluster.fork();
+    });
 }else{
     //hacer cosas
     app.listen(PORT,()=>{winston.consoleLogger.info(`Listening port ${PORT}`) })
 }
 
 //si se apaga
-const gracefulShutdown= ()=>{mongoose.connection.close()
-    .then(()=>{console.log('Mongoose disconnected')})
-    .catch(error=>`Error al desconectarse de la bbdd ${error}`)
-
+const gracefulShutdown= ()=>{mongoose.connection.close().then(()=>{console.log('Mongoose disconnected')}).catch(error=>`Error al desconectarse de la bbdd ${error}`)
 }

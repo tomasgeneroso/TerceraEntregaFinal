@@ -4,7 +4,7 @@
   <div class="col-md-6 m-auto justify-content-center">
     <h1 class="col-md-3 m-auto justify-content-center">LOGIN</h1>
     <div class="m-4 p-4 justify-content-center">
-        <form class=" p-2 justify-content-center" action="/" method="post">
+        <form class=" py-2 justify-content-center" action="/" method="post">
             <div class="form-group py-3 ">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -15,8 +15,8 @@
             </div>
 
             <button type="submit" class="btn btn-primary mx-2 col-md-3">Log in</button>
-            <button type="button" onclick="location.href='/register'" class="btn btn-secondary mx-2">Register</button>
         </form>
-</div>   
+        <button type="submit" onclick="location.href='/register'" class="mx-2 btn btn-secondary mx-2">Register</button>
+    </div>   
 </div> 
   <%- include('../partials/footer.ejs') %>

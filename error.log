@@ -313,3 +313,25 @@
 {"level":"error","timestamp":"2022-08-16T18:49:45.105Z"}
 {"level":"error","timestamp":"2022-08-16T18:49:58.536Z"}
 {"level":"error","timestamp":"2022-08-16T18:56:46.769Z"}
+{"level":"error","timestamp":"2022-09-07T02:31:02.728Z"}
+{"level":"error","timestamp":"2022-09-07T02:37:49.499Z"}
+{"level":"error","timestamp":"2022-09-07T03:05:45.559Z"}
+{"level":"error","timestamp":"2022-09-07T03:08:03.690Z"}
+{"level":"error","timestamp":"2022-09-07T03:11:32.699Z"}
+{"level":"error","timestamp":"2022-09-07T03:13:53.682Z"}
+{"level":"error","timestamp":"2022-09-07T03:27:09.074Z"}
+{"level":"error","timestamp":"2022-09-07T21:55:08.968Z"}
+{"level":"error","timestamp":"2022-09-09T18:47:48.536Z"}
+{"level":"error","timestamp":"2022-09-10T21:26:35.107Z"}
+{"level":"error","timestamp":"2022-09-10T21:26:58.336Z"}
+{"level":"error","timestamp":"2022-09-10T21:44:51.447Z"}
+{"level":"error","timestamp":"2022-09-10T22:12:36.369Z"}
+{"level":"error","timestamp":"2022-09-10T22:14:18.252Z"}
+{"level":"error","timestamp":"2022-09-10T22:15:39.225Z"}
+{"level":"error","timestamp":"2022-09-10T22:23:59.172Z"}
+{"level":"error","timestamp":"2022-09-10T22:25:01.198Z"}
+{"level":"error","timestamp":"2022-09-10T22:53:54.980Z"}
+{"level":"error","timestamp":"2022-09-10T22:53:54.983Z"}
+{"kind":"string","message":"Cast to string failed for value \"{\n  name: 'tomas',\n  surname: 'generoso',\n  email: 'tomasgeneroso90@gmail.com',\n  password: '1234',\n  address: 'asd',\n  age: '22',\n  phone: '+5493794828045'\n}\" (type Object) at path \"email\" for model \"users\"","name":"CastError","path":"email","reason":null,"stringValue":"\"{\n  name: 'tomas',\n  surname: 'generoso',\n  email: 'tomasgeneroso90@gmail.com',\n  password: '1234',\n  address: 'asd',\n  age: '22',\n  phone: '+5493794828045'\n}\"","value":{"address":"asd","age":"22","email":"tomasgeneroso90@gmail.com","name":"tomas","password":"1234","phone":"+5493794828045","surname":"generoso"},"valueType":"Object"}
+{"level":"error","timestamp":"2022-09-10T22:57:00.131Z"}
+{"level":"error","timestamp":"2022-09-10T23:10:27.825Z"}

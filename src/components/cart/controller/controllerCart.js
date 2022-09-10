@@ -1,6 +1,5 @@
 let winston = require('../../../utils/winston.js')
-const Cart=require('../schema/modelCart.js')
-let cart=new Cart()
+let {cart}=require('../../../DAOS/barrel.js')
 let productController=require('../../products/controllers/controllerProducts.js')
 
 const getProductsOnCart=async (req,res)=>{
@@ -56,7 +55,7 @@ const removeProductsOnCart=async(req,res)=>{
             response=await cart.removeProductsOnCart(cartF,productF[0])
             return response
         }else{
-            console.log('error en controller cart ')
+            console.log('error en controller cart ',error)
             return error
         }
         

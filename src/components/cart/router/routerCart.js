@@ -3,6 +3,6 @@ const cartController=require('../controller/controllerCart.js')
 const cartRouter=express.Router()
 
 cartRouter.get('/',cartController.getProductsOnCart)
-cartRouter.post('/',cartController.addProductToCart)
+cartRouter.post('/',cartController.addProductsToCart)
 
 module.exports=cartRouter

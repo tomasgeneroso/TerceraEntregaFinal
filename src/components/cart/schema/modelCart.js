@@ -9,7 +9,7 @@ class Cart{
                 return cart
             }else{ //si no existe el carro lo crea
                 let newcart = new cartModel({id:idCart,items:[],quantity:0,total:0});
-                newcart.save(function (err) {console.log(err);});
+                newcart.save(function (err) {console.log('error model cart',err);});
                 return newcart
             }
         } catch (error) {

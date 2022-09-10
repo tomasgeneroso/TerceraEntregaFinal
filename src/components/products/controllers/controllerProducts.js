@@ -1,7 +1,5 @@
 let winston = require('../../../utils/winston.js')
-const Product=require('../sChema/modelProducts.js')
-
-let product=new Product()
+let {product}=require('../../../DAOS/barrel.js')
 
 const getAllProducts=async ()=>{
     try {

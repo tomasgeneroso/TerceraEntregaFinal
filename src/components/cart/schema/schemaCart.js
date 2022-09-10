@@ -1,6 +1,6 @@
 const mongoose=require('mongoose')
 const cartSchema= new mongoose.Schema({
-    id:{type:String,required:true},
+    id:{type:String,required:true}, 
     items:[{
         title:{type:String,required:true},
         description:{type:String},
