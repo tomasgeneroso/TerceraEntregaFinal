@@ -335,3 +335,150 @@
 {"kind":"string","message":"Cast to string failed for value \"{\n  name: 'tomas',\n  surname: 'generoso',\n  email: 'tomasgeneroso90@gmail.com',\n  password: '1234',\n  address: 'asd',\n  age: '22',\n  phone: '+5493794828045'\n}\" (type Object) at path \"email\" for model \"users\"","name":"CastError","path":"email","reason":null,"stringValue":"\"{\n  name: 'tomas',\n  surname: 'generoso',\n  email: 'tomasgeneroso90@gmail.com',\n  password: '1234',\n  address: 'asd',\n  age: '22',\n  phone: '+5493794828045'\n}\"","value":{"address":"asd","age":"22","email":"tomasgeneroso90@gmail.com","name":"tomas","password":"1234","phone":"+5493794828045","surname":"generoso"},"valueType":"Object"}
 {"level":"error","timestamp":"2022-09-10T22:57:00.131Z"}
 {"level":"error","timestamp":"2022-09-10T23:10:27.825Z"}
+{"level":"error","timestamp":"2022-09-12T22:51:50.676Z"}
+{"level":"error","timestamp":"2022-09-12T22:56:31.281Z"}
+{"level":"error","timestamp":"2022-09-12T23:13:02.478Z"}
+{"level":"error","timestamp":"2022-09-13T18:39:18.842Z"}
+{"level":"error","timestamp":"2022-09-13T18:41:12.298Z"}
+{"level":"error","timestamp":"2022-09-13T18:42:09.685Z"}
+{"level":"error","timestamp":"2022-09-13T18:44:14.884Z"}
+{"level":"error","timestamp":"2022-09-13T18:44:28.164Z"}
+{"level":"error","timestamp":"2022-09-13T18:45:51.205Z"}
+{"kind":"string","message":"Cast to string failed for value \"{\n  name: 'tomas',\n  surname: 'generoso',\n  email: 'tomasgeneroso90@gmail.com',\n  password: '1234',\n  address: 'asd',\n  age: '22',\n  phone: '+5493794828045'\n}\" (type Object) at path \"email\" for model \"users\"","name":"CastError","path":"email","reason":null,"stringValue":"\"{\n  name: 'tomas',\n  surname: 'generoso',\n  email: 'tomasgeneroso90@gmail.com',\n  password: '1234',\n  address: 'asd',\n  age: '22',\n  phone: '+5493794828045'\n}\"","value":{"address":"asd","age":"22","email":"tomasgeneroso90@gmail.com","name":"tomas","password":"1234","phone":"+5493794828045","surname":"generoso"},"valueType":"Object"}
+{"level":"error","timestamp":"2022-09-13T18:57:10.559Z"}
+{"level":"error","originalStack":"Error\n    at model.Query._wrappedThunk [as _find] (C:\\Users\\Tomas\\Desktop\\Tomi\\Coderhouse\\EntregaFinal3\\node_modules\\mongoose\\lib\\helpers\\query\\wrapThunk.js:25:28)\n    at C:\\Users\\Tomas\\Desktop\\Tomi\\Coderhouse\\EntregaFinal3\\node_modules\\kareem\\index.js:426:25\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)","timestamp":"2022-09-13T19:32:47.010Z"}
+{"level":"error","originalStack":"Error\n    at model.Query._wrappedThunk [as _find] (C:\\Users\\Tomas\\Desktop\\Tomi\\Coderhouse\\EntregaFinal3\\node_modules\\mongoose\\lib\\helpers\\query\\wrapThunk.js:25:28)\n    at C:\\Users\\Tomas\\Desktop\\Tomi\\Coderhouse\\EntregaFinal3\\node_modules\\kareem\\index.js:426:25\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)","timestamp":"2022-09-13T19:33:29.956Z"}
+{"level":"error","timestamp":"2022-09-13T23:08:19.351Z"}
+{"level":"error","timestamp":"2022-09-14T02:22:21.812Z"}
+{"level":"error","timestamp":"2022-09-14T02:33:50.074Z"}
+{"level":"error","timestamp":"2022-09-14T02:40:21.997Z"}
+{"level":"error","timestamp":"2022-09-14T02:43:09.397Z"}
+{"level":"error","timestamp":"2022-09-14T02:43:53.674Z"}
+{"expiredAt":"2022-09-13T23:52:36.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-14T02:46:45.830Z"}
+{"expiredAt":"2022-09-13T23:52:36.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-14T03:08:01.478Z"}
+{"expiredAt":"2022-09-13T23:52:36.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-14T03:08:08.532Z"}
+{"expiredAt":"2022-09-13T23:52:36.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-14T03:13:56.251Z"}
+{"expiredAt":"2022-09-13T23:52:36.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-14T03:49:33.624Z"}
+{"level":"error","message":"error adduser saving document must have an _id before saving","stack":"MongooseError: document must have an _id before saving\n    at C:\\Users\\Tomas\\Desktop\\Tomi\\Coderhouse\\EntregaFinal3\\node_modules\\mongoose\\lib\\model.js:292:18\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)","timestamp":"2022-09-15T11:21:08.844Z"}
+{"level":"error","timestamp":"2022-09-15T15:28:40.694Z"}
+{"level":"error","timestamp":"2022-09-15T17:11:18.435Z"}
+{"level":"error","timestamp":"2022-09-15T17:23:58.514Z"}
+{"level":"error","timestamp":"2022-09-15T17:23:58.520Z"}
+{"level":"error","timestamp":"2022-09-15T17:24:25.947Z"}
+{"level":"error","timestamp":"2022-09-15T17:26:29.502Z"}
+{"level":"error","timestamp":"2022-09-15T17:26:47.099Z"}
+{"level":"error","timestamp":"2022-09-15T17:26:47.103Z"}
+{"expiredAt":"2022-09-15T18:11:17.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-15T18:12:49.942Z"}
+{"level":"error","timestamp":"2022-09-15T18:12:50.105Z"}
+{"expiredAt":"2022-09-15T18:13:00.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-15T18:18:48.472Z"}
+{"level":"error","timestamp":"2022-09-15T18:18:48.477Z"}
+{"level":"error","timestamp":"2022-09-15T21:51:04.370Z"}
+{"level":"error","timestamp":"2022-09-15T21:52:35.603Z"}
+{"level":"error","timestamp":"2022-09-15T21:53:05.614Z"}
+{"level":"error","timestamp":"2022-09-15T21:53:05.619Z"}
+{"expiredAt":"2022-09-15T21:50:20.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-15T21:55:26.440Z"}
+{"level":"error","timestamp":"2022-09-15T21:55:26.448Z"}
+{"expiredAt":"2022-09-15T21:55:41.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-15T22:01:14.370Z"}
+{"level":"error","timestamp":"2022-09-15T22:01:14.375Z"}
+{"expiredAt":"2022-09-15T21:55:41.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-15T22:01:50.730Z"}
+{"level":"error","timestamp":"2022-09-15T22:01:50.735Z"}
+{"expiredAt":"2022-09-15T21:55:41.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-15T22:10:49.884Z"}
+{"level":"error","timestamp":"2022-09-15T22:10:49.891Z"}
+{"expiredAt":"2022-09-15T22:16:24.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-15T23:26:24.980Z"}
+{"level":"error","timestamp":"2022-09-15T23:26:24.984Z"}
+{"expiredAt":"2022-09-15T23:29:51.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-15T23:38:46.670Z"}
+{"level":"error","timestamp":"2022-09-15T23:38:46.676Z"}
+{"level":"error","timestamp":"2022-09-16T00:13:44.151Z"}
+{"level":"error","timestamp":"2022-09-16T00:15:56.159Z"}
+{"level":"error","timestamp":"2022-09-16T00:16:08.900Z"}
+{"level":"error","timestamp":"2022-09-16T00:18:12.229Z"}
+{"level":"error","timestamp":"2022-09-16T00:18:12.234Z"}
+{"level":"error","timestamp":"2022-09-16T00:18:30.770Z"}
+{"level":"error","timestamp":"2022-09-16T00:25:51.651Z"}
+{"level":"error","timestamp":"2022-09-16T00:25:51.656Z"}
+{"level":"error","timestamp":"2022-09-16T00:26:12.143Z"}
+{"level":"error","timestamp":"2022-09-16T00:27:09.985Z"}
+{"level":"error","timestamp":"2022-09-16T00:30:26.183Z"}
+{"level":"error","timestamp":"2022-09-16T00:30:26.187Z"}
+{"level":"error","timestamp":"2022-09-16T00:30:57.196Z"}
+{"level":"error","timestamp":"2022-09-16T00:31:12.641Z"}
+{"level":"error","timestamp":"2022-09-16T00:31:33.858Z"}
+{"level":"error","timestamp":"2022-09-16T00:31:50.744Z"}
+{"level":"error","timestamp":"2022-09-16T00:31:52.256Z"}
+{"level":"error","timestamp":"2022-09-16T00:32:01.568Z"}
+{"level":"error","timestamp":"2022-09-16T00:33:03.664Z"}
+{"level":"error","timestamp":"2022-09-16T00:34:04.322Z"}
+{"level":"error","timestamp":"2022-09-16T00:34:29.774Z"}
+{"level":"error","timestamp":"2022-09-16T00:34:36.459Z"}
+{"level":"error","timestamp":"2022-09-16T00:34:52.564Z"}
+{"level":"error","timestamp":"2022-09-16T00:35:10.422Z"}
+{"level":"error","timestamp":"2022-09-16T00:35:21.268Z"}
+{"level":"error","timestamp":"2022-09-16T00:36:52.006Z"}
+{"level":"error","timestamp":"2022-09-16T00:38:32.565Z"}
+{"level":"error","timestamp":"2022-09-16T00:39:34.143Z"}
+{"level":"error","timestamp":"2022-09-16T00:43:45.614Z"}
+{"level":"error","timestamp":"2022-09-16T00:44:15.310Z"}
+{"level":"error","timestamp":"2022-09-16T00:45:15.023Z"}
+{"level":"error","timestamp":"2022-09-16T00:46:03.171Z"}
+{"level":"error","timestamp":"2022-09-16T00:46:09.719Z"}
+{"level":"error","timestamp":"2022-09-16T00:46:34.214Z"}
+{"level":"error","timestamp":"2022-09-16T00:46:43.167Z"}
+{"level":"error","timestamp":"2022-09-16T01:09:50.877Z"}
+{"level":"error","timestamp":"2022-09-16T01:10:27.248Z"}
+{"level":"error","timestamp":"2022-09-16T01:10:46.468Z"}
+{"level":"error","timestamp":"2022-09-16T01:11:03.954Z"}
+{"level":"error","timestamp":"2022-09-16T01:14:00.228Z"}
+{"level":"error","timestamp":"2022-09-16T01:14:13.513Z"}
+{"level":"error","timestamp":"2022-09-16T01:14:22.708Z"}
+{"level":"error","timestamp":"2022-09-16T01:14:42.448Z"}
+{"level":"error","timestamp":"2022-09-16T01:18:37.116Z"}
+{"level":"error","timestamp":"2022-09-16T01:18:41.507Z"}
+{"level":"error","timestamp":"2022-09-16T01:19:27.889Z"}
+{"level":"error","timestamp":"2022-09-16T01:19:51.006Z"}
+{"level":"error","timestamp":"2022-09-16T01:20:12.944Z"}
+{"level":"error","timestamp":"2022-09-16T01:20:57.840Z"}
+{"level":"error","timestamp":"2022-09-16T01:24:39.861Z"}
+{"level":"error","timestamp":"2022-09-16T01:25:04.345Z"}
+{"level":"error","timestamp":"2022-09-16T01:25:11.535Z"}
+{"level":"error","timestamp":"2022-09-16T01:25:33.742Z"}
+{"level":"error","timestamp":"2022-09-16T01:25:42.743Z"}
+{"level":"error","timestamp":"2022-09-16T01:25:59.470Z"}
+{"level":"error","timestamp":"2022-09-16T01:26:29.010Z"}
+{"level":"error","timestamp":"2022-09-16T01:28:03.384Z"}
+{"level":"error","timestamp":"2022-09-16T01:28:31.031Z"}
+{"level":"error","timestamp":"2022-09-16T01:29:37.662Z"}
+{"level":"error","timestamp":"2022-09-16T01:30:54.974Z"}
+{"level":"error","timestamp":"2022-09-16T01:47:20.425Z"}
+{"level":"error","timestamp":"2022-09-16T01:48:03.755Z"}
+{"level":"error","timestamp":"2022-09-16T01:48:22.191Z"}
+{"level":"error","timestamp":"2022-09-16T01:48:42.496Z"}
+{"level":"error","timestamp":"2022-09-16T01:48:59.034Z"}
+{"level":"error","timestamp":"2022-09-16T01:50:04.513Z"}
+{"level":"error","timestamp":"2022-09-16T01:54:43.325Z"}
+{"level":"error","timestamp":"2022-09-16T01:55:11.958Z"}
+{"level":"error","timestamp":"2022-09-16T01:55:29.121Z"}
+{"level":"error","timestamp":"2022-09-16T01:57:19.425Z"}
+{"level":"error","timestamp":"2022-09-16T01:57:32.550Z"}
+{"level":"error","timestamp":"2022-09-16T01:58:34.380Z"}
+{"level":"error","timestamp":"2022-09-16T01:59:34.443Z"}
+{"level":"error","timestamp":"2022-09-16T02:02:04.859Z"}
+{"level":"error","timestamp":"2022-09-16T02:02:30.367Z"}
+{"level":"error","timestamp":"2022-09-16T02:02:51.207Z"}
+{"level":"error","timestamp":"2022-09-16T02:03:08.543Z"}
+{"level":"error","timestamp":"2022-09-16T02:08:13.683Z"}
+{"level":"error","timestamp":"2022-09-16T02:09:56.256Z"}
+{"level":"error","timestamp":"2022-09-16T02:21:22.569Z"}
+{"level":"error","timestamp":"2022-09-17T19:47:03.718Z"}
+{"level":"error","timestamp":"2022-09-17T20:41:25.335Z"}
+{"level":"error","timestamp":"2022-09-18T19:13:05.651Z"}
+{"level":"error","timestamp":"2022-09-18T21:06:23.859Z"}
+{"level":"error","timestamp":"2022-09-18T21:13:13.731Z"}
+{"level":"error","timestamp":"2022-09-18T21:14:15.090Z"}
+{"level":"error","timestamp":"2022-09-18T21:14:57.534Z"}
+{"level":"error","timestamp":"2022-09-18T21:23:42.040Z"}
+{"level":"error","timestamp":"2022-09-18T22:19:26.817Z"}
+{"level":"error","timestamp":"2022-09-18T22:27:07.908Z"}
+{"level":"error","timestamp":"2022-09-18T22:31:01.606Z"}
+{"level":"error","timestamp":"2022-09-18T22:31:54.147Z"}
+{"level":"error","timestamp":"2022-09-18T22:32:17.735Z"}
+{"level":"error","timestamp":"2022-09-18T22:33:40.491Z"}

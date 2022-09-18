@@ -67,5 +67,5 @@ if(config.CLUSTER){
 }
 
 //si se apaga
-const gracefulShutdown= ()=>{mongoose.connection.close().then(()=>{console.log('Mongoose disconnected')}).catch(error=>`Error al desconectarse de la bbdd ${error}`)
+const gracefulShutdown= ()=>{mongoose.connection.close().then(()=>{console.log('Mongoose disconnected')}).catch(error=>`Error connecting database ${error}`)
 }

@@ -5,17 +5,18 @@ let cartDaos;
 let UserDaos;
 let cart 
 let prod
-let user
+
 (async function(){
     switch(config.MEMORY){
     case "mongo":
         // const mongoose=require('mongoose')
         // await mongoose.connect(process.env.DB).then(()=>{console.log(`Connected to MONGODB ATLAS`)}).catch(e=>console.log(`error: ${e}`))
         connect=require('../utils/database.js')
-        prodDaos=require('../components/products/sChema/modelProducts.js')//importar instancia de prod como con userdaos
-        prod=new prodDaos()
-        cartDaos=require('../components/cart/schema/modelCart.js')
-        cart=new cartDaos()
+        let {prod}=require('../components/products/sChema/modelProducts.js')//importar instancia de prod como con userdaos
+        
+        
+        let {cart}=require('../components/cart/schema/modelCart.js')
+        
         
         //console.log('Using MONGODB')
     break;

@@ -34,6 +34,8 @@ class Cart{
             let cart=await this.getCart(idCart)    
             return cart
         } catch (error) {
+            console.log("🚀 ~ file: modelCart.js ~ line 37 ~ Cart ~ getProductsOnCart ~ error", error)
+            
             winston.errorLogger.error(error)
         }
     }

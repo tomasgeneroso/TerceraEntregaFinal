@@ -9,6 +9,8 @@ const getProductsOnCart=async (req,res)=>{
         let response=await cart.getProductsOnCart(idCart)
         return response
     } catch (error) {
+        console.log("🚀 ~ file: controllerCart.js ~ line 12 ~ getProductsOnCart ~ error", error)
+        
         winston.errorLogger.error(error)
     }
 }
@@ -25,6 +27,7 @@ const addProductsToCart=async (req,res)=>{
         }
         return response
     } catch (error) {
+        console.log("🚀 ~ file: controllerCart.js ~ line 30 ~ addProductsToCart ~ error", error)
         winston.errorLogger.error(error)
     }
 }
@@ -35,6 +38,7 @@ const deleteCart=async(req,res)=>{
         let cartDeleted=await cart.deleteCart(idCart)
         return cartDeleted
     } catch (error) {
+        console.log("🚀 ~ file: controllerCart.js ~ line 41 ~ deleteCart ~ error", error)
         winston.errorLogger.error(error)
     }
 }
@@ -55,11 +59,12 @@ const removeProductsOnCart=async(req,res)=>{
             response=await cart.removeProductsOnCart(cartF,productF[0])
             return response
         }else{
-            console.log('error en controller cart ',error)
+
             return error
         }
         
     } catch (error) {
+        console.log("🚀 ~ file: controllerCart.js ~ line 67 ~ removeProductsOnCart ~ error", error)
         winston.errorLogger.error(error)
     }
 }
