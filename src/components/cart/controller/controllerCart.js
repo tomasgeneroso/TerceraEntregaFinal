@@ -2,11 +2,10 @@ let winston = require('../../../utils/winston.js')
 let {cart}=require('../../../DAOS/barrel.js')
 let productController=require('../../products/controllers/controllerProducts.js')
 
-const getProductsOnCart=async (req,res)=>{
+const getCart=async (req,res)=>{
     try {
-        let cookieTrim=req.headers.cookie
-        let idCart=cookieTrim.substring(12,(cookieTrim.length))
-        let response=await cart.getProductsOnCart(idCart)
+        let idCart=req.cookies.token
+        let response=await cart.getCart(idCart)
         return response
     } catch (error) {
         console.log("🚀 ~ file: controllerCart.js ~ line 12 ~ getProductsOnCart ~ error", error)
@@ -16,16 +15,18 @@ const getProductsOnCart=async (req,res)=>{
 }
 const addProductsToCart=async (req,res)=>{
     try {
-        let cookieTrim=req.headers.cookie
-        let idCart=cookieTrim.substring(12,(cookieTrim.length))
+        let idCart=req.cookies.token
         let idProd=req.body.title
-        let productF=await productController.product.getProduct(idProd)
+        let productF=await productController.getProduct(idProd)
         let response
         if(productF){
             let cartF=await cart.getCart(idCart)
-            response=await cart.addProductsToCart(cartF,productF)
+            response=await cart.addProductsToCart(cartF,productF) //retorna cart.items
+            if(response) return response
+            else return error
+        }else{
+            res.redirect('/product')
         }
-        return response
     } catch (error) {
         console.log("🚀 ~ file: controllerCart.js ~ line 30 ~ addProductsToCart ~ error", error)
         winston.errorLogger.error(error)
@@ -48,10 +49,11 @@ const removeProductsOnCart=async(req,res)=>{
     try {
         let idProd=req.body.title
         //busca producto 
-        let productF=await productController.product.getProduct(idProd)
+        let productF=await productController.getProduct(idProd)
+        if(!productF) return error
         //obtener id cart
-        let cookieTrim=req.headers.cookie
-        let idCart=cookieTrim.substring(12,(cookieTrim.length))
+        let idCart=req.cookies.token
+        if(!idCart) return error
         let cartF=await cart.getCart(idCart)
         let response
         //si existe producto
@@ -59,7 +61,6 @@ const removeProductsOnCart=async(req,res)=>{
             response=await cart.removeProductsOnCart(cartF,productF[0])
             return response
         }else{
-
             return error
         }
         
@@ -69,4 +70,4 @@ const removeProductsOnCart=async(req,res)=>{
     }
 }
 
-module.exports={addProductsToCart,getProductsOnCart,deleteCart,removeProductsOnCart}
+module.exports={addProductsToCart,getCart,deleteCart,removeProductsOnCart}

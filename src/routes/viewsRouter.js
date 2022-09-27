@@ -8,7 +8,7 @@ let winston = require('../utils/winston.js');
 //JWT
 let jwt=require('../components/users/controllers/jwt.js')
 //RUTAS
-
+//TODO: AGREGAR VERIFY COMO MID EN LAS RUTAS
 //post
 Router.get('/home',jwt.LoggedIn,viewsController.home)
 
@@ -25,7 +25,7 @@ Router.post('/',viewsController.login);
 Router.get('/logout',viewsController.getLogout);
 
 //carro
-Router.get('/cart',jwt.LoggedIn,viewsController.getProductsOnCart)
+Router.get('/cart',jwt.LoggedIn,viewsController.getCart)
 Router.post('/cart',jwt.LoggedIn,viewsController.addProductToCart)
 Router.post('/cartdeleted',jwt.LoggedIn,viewsController.deleteCart)
 Router.post('/itemdeleted',jwt.LoggedIn,viewsController.removeProductsOnCart)
@@ -34,7 +34,7 @@ Router.post('/itemdeleted',jwt.LoggedIn,viewsController.removeProductsOnCart)
 //products
 Router.get('/product',jwt.LoggedIn,viewsController.getProds)
 Router.post('/product',viewsController.addProds)
-Router.post('/deleteproduct',viewsController.deleteProd)
+Router.post('/product/:title',viewsController.deleteProd)
 
 //fail route
 Router.get('*', viewsController.failRoute);

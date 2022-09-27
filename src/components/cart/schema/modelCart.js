@@ -6,35 +6,28 @@ class Cart{
         try { 
             let cart=await cartModel.findOne({id:idCart})
             if(cart){ //si existe el carro               
-                return cart
+                return cart 
             }else{ //si no existe el carro lo crea
                 let newcart = new cartModel({id:idCart,items:[],quantity:0,total:0});
-                newcart.save(function (err) {console.log('error model cart',err);});
-                return newcart
+                let save=await newcart.save();
+                return save
             }
         } catch (error) {
             console.log('error en getcart',error)
             winston.errorLogger.error(error)
         }
     }
-    async addProductsToCart(cartF,productF){
+    async addProductsToCart(cartF,productF){ //TODO: pushea bien pero cuando hace el redirect al cart carga otro carro con otra ID
         try {
-            console.log('productF es en addProductsToCart ',productF)
             let price=productF[0].price+cartF.total
-            await cartModel.updateOne( { id: cartF.id }, { $push: { items: productF }, $inc:{quantity:1},$set:{total:price} });
-            let response=await cartModel.findOne({id:cartF.id})
-            return response
+            let CartId=cartF.id
+            let response=await cartModel.updateOne( { id:CartId }, { $push: { items: productF }, $inc:{quantity:1},$set:{total:price} },{returnNewDocument:true});
+            //console.log("🚀 ~ file: modelCart.js ~ line 26 ~ Cart ~ addProductsToCart ~ response", response) retorna 
+            let cart=await cartModel.findOne({id:cartF.id})
+            if(response)return cart.items
+            else return error
         } catch (error) {
-            console.log('error en addproductstocart',error)
-            winston.errorLogger.error(error)
-        }
-    }
-    async getProductsOnCart(idCart){
-        try {
-            let cart=await this.getCart(idCart)    
-            return cart
-        } catch (error) {
-            console.log("🚀 ~ file: modelCart.js ~ line 37 ~ Cart ~ getProductsOnCart ~ error", error)
+            console.log("🚀 ~ file: modelCart.js ~ line 31 ~ Cart ~ addProductsToCart ~ error", error)
             
             winston.errorLogger.error(error)
         }
@@ -79,5 +72,5 @@ class Cart{
         }
     }
 }
-
-module.exports=Cart
+let cartDaos=new Cart()
+module.exports={cartDaos}

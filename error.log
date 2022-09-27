@@ -482,3 +482,355 @@
 {"level":"error","timestamp":"2022-09-18T22:31:54.147Z"}
 {"level":"error","timestamp":"2022-09-18T22:32:17.735Z"}
 {"level":"error","timestamp":"2022-09-18T22:33:40.491Z"}
+{"level":"error","timestamp":"2022-09-18T22:42:01.630Z"}
+{"level":"error","timestamp":"2022-09-18T22:42:30.359Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2022-09-18T22:43:37.027Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2022-09-18T22:58:49.221Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2022-09-18T22:59:03.754Z"}
+{"level":"error","timestamp":"2022-09-18T23:10:02.525Z"}
+{"level":"error","timestamp":"2022-09-18T23:15:32.772Z"}
+{"level":"error","timestamp":"2022-09-20T02:15:49.983Z"}
+{"level":"error","timestamp":"2022-09-20T02:20:05.361Z"}
+{"level":"error","timestamp":"2022-09-20T18:19:22.326Z"}
+{"level":"error","timestamp":"2022-09-20T18:20:53.614Z"}
+{"level":"error","timestamp":"2022-09-20T18:22:06.955Z"}
+{"level":"error","timestamp":"2022-09-20T18:22:11.335Z"}
+{"level":"error","timestamp":"2022-09-20T18:25:27.697Z"}
+{"level":"error","timestamp":"2022-09-20T19:05:11.507Z"}
+{"level":"error","timestamp":"2022-09-20T19:05:11.511Z"}
+{"level":"error","timestamp":"2022-09-20T19:10:49.036Z"}
+{"level":"error","timestamp":"2022-09-20T19:11:16.935Z"}
+{"level":"error","message":"\ud83d\ude80 ~ file: controllerProducts.js ~ line 46 ~ deleteProduct ~ error Cannot read properties of undefined (reading 'title')","stack":"TypeError: Cannot read properties of undefined (reading 'title')\n    at Object.deleteProduct (C:\\Users\\Tomas\\Desktop\\Tomi\\Coderhouse\\EntregaFinal3\\src\\components\\products\\controllers\\controllerProducts.js:44:53)\n    at deleteProd (C:\\Users\\Tomas\\Desktop\\Tomi\\Coderhouse\\EntregaFinal3\\src\\controller\\viewsController.js:115:45)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","timestamp":"2022-09-20T19:17:19.748Z"}
+{"level":"error","message":"\ud83d\ude80 ~ file: controllerProducts.js ~ line 46 ~ deleteProduct ~ error Cannot read properties of undefined (reading 'title')","stack":"TypeError: Cannot read properties of undefined (reading 'title')\n    at Object.deleteProduct (C:\\Users\\Tomas\\Desktop\\Tomi\\Coderhouse\\EntregaFinal3\\src\\components\\products\\controllers\\controllerProducts.js:44:53)\n    at deleteProd (C:\\Users\\Tomas\\Desktop\\Tomi\\Coderhouse\\EntregaFinal3\\src\\controller\\viewsController.js:115:45)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","timestamp":"2022-09-20T19:21:43.842Z"}
+{"level":"error","message":"\ud83d\ude80 ~ file: controllerProducts.js ~ line 46 ~ deleteProduct ~ error prod.deleteProduct is not a function","stack":"TypeError: prod.deleteProduct is not a function\n    at Object.deleteProduct (C:\\Users\\Tomas\\Desktop\\Tomi\\Coderhouse\\EntregaFinal3\\src\\components\\products\\controllers\\controllerProducts.js:45:34)\n    at deleteProd (C:\\Users\\Tomas\\Desktop\\Tomi\\Coderhouse\\EntregaFinal3\\src\\controller\\viewsController.js:115:45)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","timestamp":"2022-09-20T19:27:01.078Z"}
+{"level":"error","timestamp":"2022-09-20T19:27:38.554Z"}
+{"level":"error","timestamp":"2022-09-22T18:08:50.347Z"}
+{"level":"error","timestamp":"2022-09-22T18:11:22.897Z"}
+{"level":"error","timestamp":"2022-09-22T18:19:50.862Z"}
+{"level":"error","timestamp":"2022-09-22T18:19:50.864Z"}
+{"level":"error","timestamp":"2022-09-22T18:20:46.972Z"}
+{"level":"error","timestamp":"2022-09-22T18:20:46.977Z"}
+{"level":"error","timestamp":"2022-09-22T18:31:47.980Z"}
+{"level":"error","timestamp":"2022-09-22T18:31:48.047Z"}
+{"level":"error","timestamp":"2022-09-22T18:32:12.207Z"}
+{"level":"error","timestamp":"2022-09-22T18:32:12.210Z"}
+{"level":"error","timestamp":"2022-09-22T18:35:23.258Z"}
+{"level":"error","timestamp":"2022-09-22T18:35:23.260Z"}
+{"level":"error","timestamp":"2022-09-22T18:36:40.937Z"}
+{"level":"error","timestamp":"2022-09-22T18:36:40.939Z"}
+{"level":"error","timestamp":"2022-09-22T18:37:17.306Z"}
+{"level":"error","timestamp":"2022-09-22T18:37:17.307Z"}
+{"level":"error","timestamp":"2022-09-22T18:37:17.366Z"}
+{"level":"error","timestamp":"2022-09-22T18:37:17.367Z"}
+{"level":"error","timestamp":"2022-09-22T23:09:03.977Z"}
+{"level":"error","timestamp":"2022-09-22T23:09:03.981Z"}
+{"level":"error","timestamp":"2022-09-22T23:09:43.345Z"}
+{"level":"error","timestamp":"2022-09-22T23:09:43.349Z"}
+{"level":"error","timestamp":"2022-09-22T23:10:00.797Z"}
+{"level":"error","timestamp":"2022-09-22T23:10:00.800Z"}
+{"level":"error","timestamp":"2022-09-22T23:10:31.377Z"}
+{"level":"error","timestamp":"2022-09-22T23:10:31.379Z"}
+{"level":"error","timestamp":"2022-09-22T23:17:55.806Z"}
+{"level":"error","timestamp":"2022-09-22T23:17:55.809Z"}
+{"level":"error","timestamp":"2022-09-22T23:18:33.303Z"}
+{"level":"error","timestamp":"2022-09-22T23:18:33.305Z"}
+{"level":"error","timestamp":"2022-09-22T23:20:06.964Z"}
+{"level":"error","timestamp":"2022-09-22T23:20:06.966Z"}
+{"level":"error","timestamp":"2022-09-22T23:21:34.592Z"}
+{"level":"error","timestamp":"2022-09-22T23:21:34.595Z"}
+{"level":"error","timestamp":"2022-09-22T23:21:34.785Z"}
+{"level":"error","timestamp":"2022-09-22T23:21:34.787Z"}
+{"level":"error","timestamp":"2022-09-22T23:24:14.896Z"}
+{"level":"error","timestamp":"2022-09-22T23:24:14.900Z"}
+{"level":"error","timestamp":"2022-09-22T23:28:50.706Z"}
+{"level":"error","timestamp":"2022-09-22T23:28:50.708Z"}
+{"level":"error","timestamp":"2022-09-22T23:43:40.702Z"}
+{"level":"error","timestamp":"2022-09-22T23:43:40.705Z"}
+{"kind":"string","message":"Cast to string failed for value \"{\n  title: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRSI6IltvYmplY3QgT2JqZWN0XSIsImlhdCI6MTY2Mzg4ODgwNCwiZXhwIjoxNjY0NDkzNjA0fQ.w4u8sqnfp8CsuNU-YH7x9vV27dPt4flOfXpqsdafPVw'\n}\" (type Object) at path \"id\" for model \"carts\"","name":"CastError","path":"id","reason":null,"stringValue":"\"{\n  title: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRSI6IltvYmplY3QgT2JqZWN0XSIsImlhdCI6MTY2Mzg4ODgwNCwiZXhwIjoxNjY0NDkzNjA0fQ.w4u8sqnfp8CsuNU-YH7x9vV27dPt4flOfXpqsdafPVw'\n}\"","value":{"title":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRSI6IltvYmplY3QgT2JqZWN0XSIsImlhdCI6MTY2Mzg4ODgwNCwiZXhwIjoxNjY0NDkzNjA0fQ.w4u8sqnfp8CsuNU-YH7x9vV27dPt4flOfXpqsdafPVw"},"valueType":"Object"}
+{"level":"error","timestamp":"2022-09-22T23:46:13.348Z"}
+{"level":"error","timestamp":"2022-09-22T23:46:13.359Z"}
+{"level":"error","timestamp":"2022-09-22T23:47:09.732Z"}
+{"level":"error","timestamp":"2022-09-22T23:50:45.450Z"}
+{"level":"error","timestamp":"2022-09-22T23:54:22.338Z"}
+{"level":"error","timestamp":"2022-09-22T23:55:41.478Z"}
+{"level":"error","timestamp":"2022-09-22T23:57:45.864Z"}
+{"level":"error","timestamp":"2022-09-22T23:58:15.747Z"}
+{"level":"error","timestamp":"2022-09-23T01:29:08.691Z"}
+{"level":"error","timestamp":"2022-09-23T01:31:51.452Z"}
+{"level":"error","timestamp":"2022-09-23T01:33:23.342Z"}
+{"level":"error","timestamp":"2022-09-23T01:34:53.450Z"}
+{"level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/","reason":{"commonWireVersion":13,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"maxElectionId":"7fffffff000000000000000b","maxSetVersion":1,"servers":{},"setName":"atlas-3dce4g-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"timestamp":"2022-09-23T03:15:51.929Z"}
+{"level":"error","timestamp":"2022-09-23T20:12:20.233Z"}
+{"level":"error","timestamp":"2022-09-23T20:43:52.550Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2022-09-23T21:40:15.344Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2022-09-23T21:41:10.825Z"}
+{"level":"error","timestamp":"2022-09-23T21:59:27.513Z"}
+{"level":"error","timestamp":"2022-09-23T21:59:27.515Z"}
+{"level":"error","timestamp":"2022-09-24T19:19:12.402Z"}
+{"level":"error","timestamp":"2022-09-24T19:19:13.671Z"}
+{"level":"error","timestamp":"2022-09-24T19:19:13.673Z"}
+{"level":"error","timestamp":"2022-09-24T19:19:51.482Z"}
+{"level":"error","timestamp":"2022-09-24T19:59:32.305Z"}
+{"_message":"carts validation failed","errors":{"id":{"kind":"required","message":"Path `id` is required.","name":"ValidatorError","path":"id","properties":{"message":"Path `id` is required.","path":"id","type":"required"}}},"level":"error","message":"carts validation failed: id: Path `id` is required.","name":"ValidationError","timestamp":"2022-09-24T20:02:22.185Z"}
+{"level":"error","timestamp":"2022-09-24T20:02:22.190Z"}
+{"level":"error","timestamp":"2022-09-24T20:02:22.193Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:41.798Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:41.821Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:41.835Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:41.836Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:41.846Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:41.847Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:41.855Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:41.857Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:41.864Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:41.866Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:41.875Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:41.876Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:41.883Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:41.885Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:41.891Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:41.892Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:41.899Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:41.901Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:41.907Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:41.908Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:41.918Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:41.920Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:41.933Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:41.936Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:41.943Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:41.944Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:41.951Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:41.952Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:41.960Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:41.962Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:41.969Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:41.970Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:41.977Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:41.979Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:41.987Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:41.988Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:41.998Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:41.999Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:42.008Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:42.010Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.066Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.067Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.075Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.076Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.083Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.085Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.091Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.092Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.102Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.103Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.112Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.113Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.122Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.123Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.131Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.133Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.141Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.143Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.149Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.151Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.158Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.160Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.168Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.169Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.174Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.176Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.184Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.185Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.191Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.192Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.200Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.202Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.208Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.209Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.216Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.217Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.223Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.224Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:43.232Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:43.233Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.094Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.096Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.103Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.104Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.111Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.113Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.120Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.121Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.128Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.130Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.137Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.138Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.145Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.147Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.154Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.155Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.163Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.164Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.171Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.172Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.178Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.179Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.185Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.186Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.192Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.194Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.200Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.201Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.207Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.208Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.215Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.216Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.222Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.223Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.229Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.231Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.236Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.237Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:47.243Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:47.245Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.285Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.287Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.296Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.298Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.304Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.305Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.312Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.313Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.319Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.321Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.328Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.330Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.337Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.338Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.346Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.347Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.354Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.355Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.363Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.364Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.373Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.374Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.383Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.385Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.392Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.394Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.402Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.403Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.409Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.411Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.418Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.420Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.428Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.430Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.436Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.437Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.444Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.445Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:46:52.451Z"}
+{"level":"error","timestamp":"2022-09-27T00:46:52.452Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.179Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.181Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.196Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.198Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.206Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.209Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.217Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.218Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.229Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.231Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.238Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.242Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.250Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.251Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.259Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.260Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.267Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.268Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.276Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.277Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.285Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.286Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.298Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.299Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.305Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.306Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.314Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.315Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.321Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.322Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.330Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.331Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.336Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.337Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.345Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.346Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.353Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.354Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:01.362Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:01.363Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.397Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.399Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.409Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.410Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.417Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.418Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.425Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.426Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.434Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.435Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.444Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.445Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.452Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.453Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.461Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.463Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.475Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.478Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.488Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.491Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.499Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.500Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.508Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.509Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.515Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.516Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.524Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.526Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.534Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.536Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.545Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.546Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.552Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.553Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.562Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.563Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.568Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.569Z"}
+{"expiredAt":"2022-09-27T00:40:33.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:48:02.578Z"}
+{"level":"error","timestamp":"2022-09-27T00:48:02.579Z"}
+{"expiredAt":"2022-09-27T00:51:20.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:53:52.473Z"}
+{"level":"error","timestamp":"2022-09-27T00:53:52.577Z"}
+{"expiredAt":"2022-09-27T00:55:37.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T00:57:09.037Z"}
+{"level":"error","timestamp":"2022-09-27T00:57:09.039Z"}
+{"expiredAt":"2022-09-27T00:58:59.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T01:40:24.707Z"}
+{"level":"error","timestamp":"2022-09-27T01:40:24.719Z"}
+{"level":"error","timestamp":"2022-09-27T01:52:19.709Z"}
+{"level":"error","timestamp":"2022-09-27T01:52:19.711Z"}
+{"expiredAt":"2022-09-27T01:56:49.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T02:00:18.645Z"}
+{"level":"error","timestamp":"2022-09-27T02:00:18.647Z"}
+{"expiredAt":"2022-09-27T02:01:24.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T02:05:49.862Z"}
+{"level":"error","timestamp":"2022-09-27T02:05:49.864Z"}
+{"level":"error","timestamp":"2022-09-27T02:09:40.109Z"}
+{"expiredAt":"2022-09-27T02:10:19.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T02:22:41.179Z"}
+{"level":"error","timestamp":"2022-09-27T02:22:41.181Z"}
+{"level":"error","timestamp":"2022-09-27T18:29:24.764Z"}
+{"expiredAt":"2022-09-27T18:30:09.000Z","level":"error","message":"jwt expired","name":"TokenExpiredError","timestamp":"2022-09-27T21:42:18.330Z"}
+{"level":"error","timestamp":"2022-09-27T21:42:18.337Z"}
+{"level":"error","timestamp":"2022-09-27T21:44:07.651Z"}
+{"level":"error","timestamp":"2022-09-27T21:44:07.653Z"}

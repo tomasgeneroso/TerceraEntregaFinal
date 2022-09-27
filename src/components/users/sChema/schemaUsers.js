@@ -1,5 +1,5 @@
 const mongoose=require('mongoose')
-const {expireTime}=require('../../../config/config.js')
+const {EXPIRE_TIME}=require('../../../config/config.js')
 const userSchema= new mongoose.Schema({
     email:{type:String,required:true},
     password:{type:String,required:true},
@@ -8,8 +8,8 @@ const userSchema= new mongoose.Schema({
     phone:{type:String,required:true},
     age:{type:Number},
     address:{type:String},
-    profilePhoto:{type:String},
-    createdAt: { type: Date, expires: expireTime, default: Date.now, index:true }//contiene path de la foto
+    profilePhoto:{type:String},//contiene path de la foto
+    createdAt: { type: Date, expires: EXPIRE_TIME, default: Date.now, index:true }
 })
 
 const userModel= mongoose.model('users',userSchema)

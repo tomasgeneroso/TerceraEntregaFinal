@@ -5,11 +5,7 @@ let winston = require('../../../utils/winston.js')
 class Product{
     async getAllProducts(){
         try {
-            let response = await prodModel.find({},(error,result)=>{
-                if (error) return error
-                else return response
-            });
-            console.log("🚀 ~ file: modelProducts.js ~ line 9 ~ Product ~ getAllProducts ~ response", response)
+            let response = await prodModel.find({})
             return response;
         } catch (error) {
             console.log("🚀 ~ file: modelProducts.js ~ line 12 ~ Product ~ getAllProducts ~ error", error)
@@ -41,8 +37,10 @@ class Product{
     async deleteProd(title){
         try {
             let prod=await this.getProduct(title)
+            console.log("🚀 ~ file: modelProducts.js ~ line 40 ~ Product ~ deleteProd ~ title", title)
             if(prod){ 
                 let deleted=await prodModel.deleteOne({title:title})
+                console.log("🚀 ~ file: modelProducts.js ~ line 42 ~ Product ~ deleteProd ~ deleted", deleted)
                 return deleted
             }else{
                 return false
@@ -63,5 +61,5 @@ class Product{
         }
     }
 }
-let prod=new Product()
-module.exports=prod
+let prodDaos=new Product()
+module.exports={prodDaos}

@@ -2,24 +2,29 @@
 <%- include('../partials/nav.ejs') %> 
 
 <div class="col-10 m-auto justify-content-center ">
-    <div class="row ">
-      <div class="col-3">
-        <h1>CartID</h1>
-      </div> 
-      <div class="col-6 ">
-        <form action="/cart" class=""method="post">          
-              <input type="text" name='title'class="form-control" placeholder="Product title..." id="InputTitle">
-              <button type="submit" class="btn col-3 btn-success">Add to cart</button>
-        </form>
-      </div>
-      <div class="col-3 ">
+  <div>
+    <div class="row m-auto justify-content-center">
+      <div class="col-3 m-5">
+        <div class="col-3 ">
+          <h1>CART</h1>
+        </div> 
         <form action='/cartdeleted' method="POST">
           <button type="submit" class="btn btn-danger">Delete cart</button>
         </form>
-      </div> 
+      </div>
     </div>
+  </div>
     
-      
+  <div class="row ">
+    <div class=" justify-content-center">
+      <form action="/cart" method="post">          
+          <input type="text" class="col-3" name='title'class="form-control" placeholder="Product title..." id="InputTitle">
+          <button type="submit" class="btn btn-success">Add to cart</button>
+      </form>
+    </div>
+  </div>
+     
+        
     <!--HACER UN RELLENADO AUTOMATICO-->
     <div class="col-10">
         <table class="table">

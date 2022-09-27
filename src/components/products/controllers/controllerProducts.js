@@ -1,8 +1,8 @@
 let winston = require('../../../utils/winston.js')
-let {product}=require('../../../DAOS/barrel.js')
+let {prod}=require('../../../DAOS/barrel.js')
 const getAllProducts=async ()=>{
     try {
-        let data = await product.getAllProducts()
+        let data = await prod.getAllProducts()
         return data
     } catch (error) {
         console.log("🚀 ~ file: controllerProducts.js ~ line 9 ~ getAllProducts ~ error", error)
@@ -16,7 +16,7 @@ const addProduct=async (data)=>{
                 message: 'Faltan datos'
             });
         } else {
-            let response = await product.addProduct(data)
+            let response = await prod.addProduct(data)
             return response
         }
     } catch (error) {
@@ -26,22 +26,19 @@ const addProduct=async (data)=>{
 }
 const  getProduct=async (title)=>{
     try {
-        if (!title) {
-            res.status(400).send({
-                message: 'No title'
-            });
-        } else {
-            let response = await product.getProduct(title)
-            return response
-        }
+        if (!title) res.status(400).send({message: 'No title'});
+        let response = await prod.getProduct(title)
+        return response
+        
     } catch (error) {
         console.log("🚀 ~ file: controllerProducts.js ~ line 38 ~ getProduct ~ error", error)
         winston.errorLogger.error(error)
     }
 }
-const deleteProduct=async(data)=>{
+const deleteProduct=async(title)=>{
     try {
-        let deleted = await product.deleteProduct(data.title)
+        let deleted = await prod.deleteProd(title)
+        console.log("🚀 ~ file: controllerProducts.js ~ line 46 ~ deleteProduct ~ deleted", deleted)
         if(deleted) return deleted
         else return false
     } catch (error) {
@@ -49,4 +46,4 @@ const deleteProduct=async(data)=>{
         winston.errorLogger.error("🚀 ~ file: controllerProducts.js ~ line 46 ~ deleteProduct ~ error",error)
     }
 }
-module.exports={getAllProducts,addProduct,getProduct,deleteProduct,product}
+module.exports={getAllProducts,addProduct,getProduct,deleteProduct,prod}

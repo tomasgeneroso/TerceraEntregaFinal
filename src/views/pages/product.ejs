@@ -22,7 +22,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">n</th>
+                  <th scope="row"></th>
                   <td><input type="text" name="title" class="form-control"  placeholder="Enter title"></td>
                   <td><input type="number" name="price" class="form-control"  placeholder="Enter price"></td>
                   <td><input type="text" name="description" class="form-control"  placeholder="description"></td>
@@ -34,22 +34,26 @@
                     </form>
                   </td>
                 </tr>
-                
-                <!-- AUTOMATIZAR CARGA POR PRODUCTO 
-                <tr>
-                  <th scope="row">n</th>
-                  <td>product.title=%></td>
-                  <td>product.price=%></td>
-                  <td>product.description=%></td>
-                  <td>product.stock=%></td>
-                  <td>=date%></td>
-                  <td>
-                    <form action="/deleteproduct" method="post">
-                      <input type="submit" class="btn btn-danger md-2 mx-2" name="option" value="delete">
+                <% product.forEach(prod=>{ %>
+                <tr>          
+                  <form action="/product/<%= prod.title%>" method="post">
+                    <th scope="row"></th>
+                    <td> 
+                      <input type="hidden"  value="<%= prod.title%>" />
+                      <%= prod.title%>
+                    </td>
+                    <td>$ <%= prod.price%></td>
+                    <td> <%= prod.description%></td>
+                    <td> <%= prod.stock%></td>
+                    <td> <%= date%></td>
+                    <td>
+                    
+                      <input type="submit" class="btn btn-danger md-2 mx-2" value="delete">
                     </form>
                   </td>
                 </tr>
-              -->
+                <% }) %>
+             
               </tbody>
             </table>
           </form>

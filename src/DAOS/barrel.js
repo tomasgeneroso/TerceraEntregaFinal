@@ -1,7 +1,5 @@
 let config=require('../config/config.js')
 let connect
-let prodDaos;
-let cartDaos;
 let UserDaos;
 let cart 
 let prod
@@ -12,11 +10,11 @@ let prod
         // const mongoose=require('mongoose')
         // await mongoose.connect(process.env.DB).then(()=>{console.log(`Connected to MONGODB ATLAS`)}).catch(e=>console.log(`error: ${e}`))
         connect=require('../utils/database.js')
-        let {prod}=require('../components/products/sChema/modelProducts.js')//importar instancia de prod como con userdaos
+        let {prodDaos}=require('../components/products/sChema/modelProducts.js')//importar instancia de prod como con userdaos
+        prod=prodDaos
         
-        
-        let {cart}=require('../components/cart/schema/modelCart.js')
-        
+        let {cartDaos}=require('../components/cart/schema/modelCart.js')
+        cart=cartDaos
         
         //console.log('Using MONGODB')
     break;

@@ -32,8 +32,8 @@ const viewsRouter=require('./routes/viewsRouter.js')
 //SESSION 
 const session=require('express-session')
 const cookieParser=require('cookie-parser')
-const MongoStore = require('connect-mongo')
 app.use(cookieParser())
+const MongoStore = require('connect-mongo')
 //Configuracion carrito
 app.use(session({
     secret:config.SECRET,
