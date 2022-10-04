@@ -17,6 +17,7 @@ const addProductsToCart=async (req,res)=>{
     try {
         let idCart=req.cookies.token
         let idProd=req.body.title
+        
         let productF=await productController.getProduct(idProd)
         let response
         if(productF){
@@ -34,8 +35,7 @@ const addProductsToCart=async (req,res)=>{
 }
 const deleteCart=async(req,res)=>{
     try {
-        let cookieTrim=req.headers.cookie
-        let idCart=cookieTrim.substring(12,(cookieTrim.length))
+        let idCart=req.cookies.token
         let cartDeleted=await cart.deleteCart(idCart)
         return cartDeleted
     } catch (error) {

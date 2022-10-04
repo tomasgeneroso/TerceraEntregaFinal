@@ -55,7 +55,7 @@ if(config.CLUSTER){
     } else {
         //hacer cosas
         app.use('/',viewsRouter)
-     app.listen(PORT,()=>{winston.consoleLogger.info(`Listening port ${PORT} on CLUSTER MODE`) })
+        app.listen(PORT,()=>{winston.consoleLogger.info(`Listening port ${PORT} on CLUSTER MODE`) })
     }
     cluster.on("exit", (worker) => {
         console.log(`Worker ${worker.process.pid} died`);

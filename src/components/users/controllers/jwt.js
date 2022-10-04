@@ -21,18 +21,18 @@ const  signToken=async (user) => {
 //valida jwt
 const validateToken=async (token) => {
     try {
-        if(!token) res.status(401).send('Access denied')        
+        if(!token) return error        
         let verified=jwt.verify(token,jwtsecret)
         return verified
     }catch (error) {
         if(error instanceof jwt.TokenExpiredError){
-            console.log("🚀 ~ file: jwt.js ~ line 29 ~ validateToken ~ error, the token expired", error)
             winston.warningLogger.error(error)
-        }else{
-            console.log("🚀 ~ file: jwt.js ~ line 32 ~ validateToken ~ error", error)
-            winston.errorLogger.error(error)
+            return false
         }
-        return false
+        console.log("🚀 ~ file: jwt.js ~ line 28 ~ validateToken ~ error", error)
+       
+        winston.warningLogger.error(error)
+        return error
     }
 }
 
@@ -40,18 +40,19 @@ const validateToken=async (token) => {
 const LoggedIn=async (req,res,next)=>{
     try {
         let token=req.cookies.token
-        if(token){ 
-            let response=await validateToken(token)    
-            if(!response) return error
-            next()
-        }else{
-            return error
-        }
-        
+        if(!token) res.redirect('/')
+        let response=await validateToken(token)    
+        if(!response) return res.redirect('/')
+        next()
     } catch (error) {
+        if(error instanceof jwt.TokenExpiredError){
+           
+            winston.warningLogger.error(error)
+           return false
+        }
         console.log("🚀 ~ file: jwt.js ~ line 45 ~ isLoggedIn ~ error", error)
         winston.errorLogger.error(error)
-        res.redirect('/')
+        return error
     }
 }
 module.exports={signToken,validateToken,LoggedIn}

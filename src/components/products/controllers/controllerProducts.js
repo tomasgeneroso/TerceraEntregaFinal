@@ -24,12 +24,12 @@ const addProduct=async (data)=>{
         winston.errorLogger.error(error)
     }
 }
-const  getProduct=async (title)=>{
+const  getProduct=async (title) => {
+    console.log("🚀 ~ file: controllerProducts.js ~ line 38 ~ getProduct ~ title", title)
     try {
-        if (!title) res.status(400).send({message: 'No title'});
+        if (!title) return error
         let response = await prod.getProduct(title)
         return response
-        
     } catch (error) {
         console.log("🚀 ~ file: controllerProducts.js ~ line 38 ~ getProduct ~ error", error)
         winston.errorLogger.error(error)

@@ -4,7 +4,7 @@
   <div class="col-md-12 m-auto justify-content-center">
     <div class="m-4 p-4 justify-content-center">
         <div class="px-5">
-          <form action="/product" method="POST">
+          
             <table class="table table-striped table-hover">
               <thead class="">
                 <tr class="">
@@ -23,40 +23,34 @@
               <tbody>
                 <tr>
                   <th scope="row"></th>
+                 
+                  <form action="/product" method="post">
                   <td><input type="text" name="title" class="form-control"  placeholder="Enter title"></td>
                   <td><input type="number" name="price" class="form-control"  placeholder="Enter price"></td>
                   <td><input type="text" name="description" class="form-control"  placeholder="description"></td>
                   <td scope="row"><input type="number" name="stock" class="form-control"  placeholder="Enter stock"></td>
                   <td><%=date%></td>
-                  <td>
-                    <form action="/product" method="post">
-                      <input type="submit" class="btn btn-primary md-2 mx-2" name="option" value="add">
-                    </form>
-                  </td>
+                  <td><input type="submit" class="btn btn-primary md-2 mx-2" name="edit" value="add"></td>
+                </form>
                 </tr>
                 <% product.forEach(prod=>{ %>
                 <tr>          
                   <form action="/product/<%= prod.title%>" method="post">
                     <th scope="row"></th>
-                    <td> 
-                      <input type="hidden"  value="<%= prod.title%>" />
-                      <%= prod.title%>
-                    </td>
-                    <td>$ <%= prod.price%></td>
-                    <td> <%= prod.description%></td>
-                    <td> <%= prod.stock%></td>
-                    <td> <%= date%></td>
-                    <td>
-                    
-                      <input type="submit" class="btn btn-danger md-2 mx-2" value="delete">
-                    </form>
-                  </td>
+                    <td> <input type="hidden" name="title" value="<%= prod.title%>" /><%= prod.title%></td>
+                    <td> <input type="hidden"name="price"   value="<%= prod.price%>" />$ <%= prod.price%></td>
+                    <td> <input type="hidden"  name="description" value="<%= prod.description%>" /><%= prod.description%></td>
+                    <td> <input type="hidden" name="stock" value=" <%= prod.stock%>" /> <%= prod.stock%></td>
+                    <td> <input type="hidden"  value="  <%= prod.createdAt%>" />  <%= prod.createdAt%></td>
+                    <td><input type="submit" class="btn btn-danger md-2 mx-2" name="edit" value="delete"></td>
+                    <td><input type="submit"  formaction="/cart/<%= prod.title%>" formmethod="post"class="btn btn-success md-2 mx-2" name="edit" value="addcart"></td>
+                  </form>
                 </tr>
                 <% }) %>
              
               </tbody>
             </table>
-          </form>
+          
           
           </div>
         

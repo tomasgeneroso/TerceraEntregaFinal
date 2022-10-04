@@ -3,6 +3,8 @@ const cartController=require('../components/cart/controller/controllerCart.js')
 const userController=require('../components/users/controllers/controllerUsers.js')
 let winston = require('../utils/winston.js');
 let jwt=require('../components/users/controllers/jwt.js');
+let {sendMail}=require('../utils/nodemailer.js')
+let {cart}=require('../DAOS/barrel.js')
 
 let home=async(req,res)=>{
     try {
@@ -25,10 +27,8 @@ let getLogin=async (req, res) => {
     }
 }
 let login=async (req, res) => { 
-    try {
-        
+    try {  
         let response=await userController.getUser(req,res)
-
         if(response){
             let user=response
             let userE={user:response.email}
@@ -60,7 +60,10 @@ let register=async(req,res)=>{
         if(response){
             let userE={email:response.email}
             let token = await jwt.signToken(userE)  
-            if(!token){res.send("access denied, token't")}    
+            if(!token)res.send("access denied, token't") 
+    
+            //await sendMail(response.email)
+
             res.cookie('token', token)
             res.render('../views/pages/login.ejs')
         }else{
@@ -71,15 +74,14 @@ let register=async(req,res)=>{
         winston.errorLogger.error(error)
     }
 }
+
 let getLogout=async(req,res)=>{
     try {
-        console.log('user logouts')
-        let deleted=await userController.logOutUser(req,res)
-        console.log("🚀 ~ file: viewsController.js ~ line 81 ~ getLogout ~ deleted", deleted)
-        if(!deleted) return error
-        res.clearCookie("token");
-        res.clearCookie("refresh_token");
-        res.redirect('/login')
+        if(req.cookies.token){
+            res.clearCookie('token')
+            res.clearCookie('user')
+        }
+        res.redirect('/') 
     } catch (error) {
         console.log('error en getlogout viewscontroller',error)
         winston.errorLogger.error(error)
@@ -93,11 +95,14 @@ let failRoute=async(req,res)=>{
         winston.errorLogger.error(error)
     }
 }
-let deleteProd=async(req,res)=>{
-    try {
-        let title=req.params.title
-        let deleted=await productController.deleteProduct(title)
-        if(deleted) res.redirect('/product')
+let deleteProd=async(req,res) => {
+    try {    
+    let title=req.params.title
+    console.log("🚀 ~ file: viewsController.js ~ line 102 ~ deleteProd ~ title", title)
+    let deleted=await productController.deleteProduct(title)
+    console.log("🚀 ~ file: viewsController.js ~ line 108 ~ deleteProd ~ deleted", deleted)
+    if(deleted) res.redirect('/product')
+     
     } catch (error) {
         console.log("🚀 ~ file: viewsController.js ~ line 106 ~ deleteProd ~ error", error)
         winston.errorLogger.error(error)
@@ -108,22 +113,32 @@ let getProds=async(req,res)=>{
         //luego enviar prods para mostrarlos
         
         let product=await productController.getAllProducts()
-        let confirmation=false
+        
         let date= Date.now()
-        res.render('../views/pages/product.ejs',{product,date})
+        res.render('../views/pages/product.ejs', {
+            title: "Login", //page title
+            action: "/login",
+            product,
+            date, //post action for the form
+            fields: [
+            {name:'email',type:'text',property:'required'},   //first field for the form
+            {name:'password',type:'password',property:'required'}  //another field for the form
+            ]
+        });
+        
     } catch (error) {
-        console.log('error en getProds viewscontroller',error)
+        console.log("🚀 ~ file: viewsController.js ~ line 130 ~ getProds ~ error", error)
         winston.errorLogger.error(error)
     }
 }
 let addProds=async(req,res)=>{
     try {
-        let data = req.body
-        let product=await productController.addProduct(data)
-        if(product) res.redirect('/product')
-        else return error
+        
+            let product=req.body
+            let added=await productController.addProduct(product)
+            if(added) res.redirect('/product')
     } catch (error) {
-        console.log("🚀 ~ file: viewsController.js ~ line 162 ~ addProds ~ error", error)
+        console.log("🚀 ~ file: viewsController.js ~ line 149 ~ addProds ~ error", error)
         winston.errorLogger.error(error)
     }
 }
@@ -145,9 +160,10 @@ let deleteCart=async (req,res)=>{
     try {
         let cart =await cartController.deleteCart(req,res)
         if(!cart) return error
-        res.redirect('/home')
+        res.redirect('/cart')
     } catch (error) {
-        console.log('error en deletecart',error)
+        console.log("🚀 ~ file: viewsController.js ~ line 150 ~ deleteCart ~ error", error)
+        
         winston.errorLogger.error(error)
     }
     
@@ -170,20 +186,7 @@ let getCart=async(req,res)=>{
 let addProductToCart=async(req,res)=>{
     try {
         let response=await cartController.addProductsToCart(req,res)
-        if (response){
-            //debe devolver items
-           console.log("🚀 ~ file: viewsController.js ~ line 194 ~ addProductToCart ~ response", response)
-            //let cartF=await cartController.getCart(req,res)
-            //console.log("🚀 ~ file: viewsController.js ~ line 192 ~ addProductToCart ~ cartF", cartF)
-            //if(cartF){
-                // let quantity=cartF.quantity
-                // let total=cartF.total
-                // let cart=cartF.items 
-                // console.log("🚀 ~ file: viewsController.js ~ line 195 ~ addProductToCart ~ cart", cart)
-                res.redirect('/cart')
-                //res.render('../views/pages/carro.ejs',{cart,quantity,total})
-            //}
-        }
+        if (response) res.redirect('/cart')
     } catch (error) {
         console.log("🚀 ~ file: viewsController.js ~ line 198 ~ addProductToCart ~ error", error)
         winston.errorLogger.error(error)

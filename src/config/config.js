@@ -9,7 +9,8 @@ let config={
     MEMORY:process.env.MEMORY,
     EXPIRE_TIME:process.env.EXPIRE_TIME,
     EXPIRE_TIME2:process.env.EXPIRE_TIME2,
-    
+    USER_MAILER:process.env.USER_MAILER,
+    PASS_MAILER:process.env.PASS_MAILER
 }
 
 module.exports=config

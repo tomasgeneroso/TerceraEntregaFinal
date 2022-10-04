@@ -17,18 +17,18 @@ class Cart{
             winston.errorLogger.error(error)
         }
     }
-    async addProductsToCart(cartF,productF){ //TODO: pushea bien pero cuando hace el redirect al cart carga otro carro con otra ID
+    async addProductsToCart(cartF,productF){ 
+    
+
         try {
             let price=productF[0].price+cartF.total
             let CartId=cartF.id
-            let response=await cartModel.updateOne( { id:CartId }, { $push: { items: productF }, $inc:{quantity:1},$set:{total:price} },{returnNewDocument:true});
-            //console.log("🚀 ~ file: modelCart.js ~ line 26 ~ Cart ~ addProductsToCart ~ response", response) retorna 
+            let response=await cartModel.updateOne( { id:CartId }, { $push: { items: productF },$set:{total:price} },{returnNewDocument:true});
             let cart=await cartModel.findOne({id:cartF.id})
             if(response)return cart.items
             else return error
         } catch (error) {
             console.log("🚀 ~ file: modelCart.js ~ line 31 ~ Cart ~ addProductsToCart ~ error", error)
-            
             winston.errorLogger.error(error)
         }
     }
@@ -44,8 +44,7 @@ class Cart{
                 return false
             }
         } catch (error) {
-            console.log('error en deletecart',error)
-            
+            console.log("🚀 ~ file: modelCart.js ~ line 47 ~ Cart ~ deleteCart ~ error", error)
             winston.errorLogger.error(error)
         }
     }
